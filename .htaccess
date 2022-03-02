@@ -10,7 +10,7 @@ RewriteCond %{SCRIPT_FILENAME} -d [OR]
 RewriteCond %{SCRIPT_FILENAME} -f
 RewriteRule "(^|/)\." - [F]
 #
-
+#
 <IfModule mod_headers.c>
   Header set Access-Control-Allow-Origin "*"
 </IfModule>

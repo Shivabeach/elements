@@ -1,16 +1,14 @@
 /** @format */
-import { properCase, log, listen, months, addToArray } from './utils.js';
-const color = require('color');
+import { properCase, log, months, addToArray } from './utils.js';
 const item1 = document.querySelector('.item-1');
 const item2 = document.querySelector('.item-2');
 const item3 = document.querySelector('.item-3');
 const item4 = document.querySelector('.item-4');
 let datey = document.getElementById('datey');
 const copyr = document.querySelector('.copy');
-
 // site links
 const str = 'Home';
-const item11 = str.link('http://designs/');
+const item11 = str.link('http://elements/');
 item1.innerHTML = item11;
 const str2 = 'Page 2';
 const item22 = str2.link('http://designs/prime/two');
@@ -33,7 +31,7 @@ function returnDate() {
 returnDate();
 
 let yer = new Date();
-copyr.innerHTML = `\u00A92019 - ${yer.getFullYear()}`; //copywright
+copyr.innerHTML = `Elements \u00A92019 - ${yer.getFullYear()}`; //copywright
 
 for (let i = 0; i < document.links.length; i++) {
 	// this highlights the current active link

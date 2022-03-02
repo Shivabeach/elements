@@ -13,17 +13,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <div class="parent">
 	<header>
 		<p>The page you are looking at is being generated dynamically by CodeIgniter.</p>
-		<p>There are 4 grids to this page</p>
-		<!-- <p>This is  1/4 full length</p> -->
+
 	</header>
 	<div class="left-side">
 		<p>If you would like to edit this page you'll find it located at:</p>
-		<p>This is 1 / 2 = 1/3 of the page starting with 1 going to 2</p>
-		<p>If you would like to edit this page you'll find it located at:</p>
-		<p>This is 1 / 2 = 1/3 of the page starting with 1 going to 2</p>
-		<p>If you would like to edit this page you'll find it located at:</p>
-		<p>This is 1 / 2 = 1/3 of the page starting with 1 going to 2</p>
-	</div>
+		</div>
 	<main contenteditable="true">
 		<p>This is 2 / 3. Starting from grid 2 and going to 3  </p>
 		<p>This is 2 / 3. Starting from grid 2 and going to 3 </p>

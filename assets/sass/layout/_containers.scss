@@ -2,6 +2,78 @@
 /** All prime container properties */
 
 @use '../abstracts' as *;
-// prime page layout
+// prime page grid layout
+#prime-container {
+	max-width: 90rem;
+	margin-inline: auto;
+	display: grid;
+	height: auto;
+	grid-column-gap: 1rem;
+	grid-row-gap: 1rem;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: 0.5fr repeat(4, 1fr);
+}
 
 //--------------------------------------------
+header.head {
+	grid-column: 1/7;
+	@include center(flex-end, center);
+	//@include borders(1px, solid, $muted-clay);
+}
+#left {
+	padding: 0.5rem;
+	grid-column: 1 / 2;
+	grid-row: 2/5;
+	//@include borders(1px, solid, $elderberry);
+}
+
+section {
+	grid-column: 2 / 6;
+	grid-row: 2/5;
+	//@include borders(1px, solid, $elderberry);
+	.section-head {
+		display: grid;
+		justify-content: center;
+		align-content: flex-start;
+	}
+	article {
+		width: 98%;
+		margin: 1rem auto;
+	}
+}
+aside {
+	padding: 0.5rem;
+	grid-column: 6 / 7;
+	grid-row: 2/5;
+	//@include borders(1px, solid, $elderberry);
+}
+
+footer {
+	grid-column: 1/7;
+	grid-row: 5/6;
+	//@include borders(1px, solid, var(--prime-text));
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	#box1 {
+		grid-column: 1/2;
+	}
+	#box2 {
+		grid-column: 2/3;
+	}
+	#box3 {
+		grid-column: 3/4;
+	}
+	#box4 {
+		grid-column: 4/5;
+	}
+	#box5 {
+		grid-column: 5/6;
+	}
+	#box6 {
+		grid-column: 6/7;
+	}
+}
+.box {
+	padding: 0.5rem;
+	//@include borders(1px, solid, var(--prime-text));
+}

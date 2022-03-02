@@ -9,6 +9,11 @@ $desktop1: 1024px
 	justify-content: $value
 	align-items: $value2
 
+@mixin borders($size, $style, $color)
+	border-width: $size
+	border-style: $style
+	border-color: $color
+
 =desktop
 	@media screen and (min-width: $desktop1)
 		@content

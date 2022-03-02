@@ -1,44 +1,4 @@
-/**
- * /* Config
- *
- * @format
- */
-@font-face {
-  font-family: MerriweatherSans;
-  src: url("../fonts/MerriweatherSans-VariableFont_wght.ttf");
-  src-format: "tff supports variations";
-  src: url("../fonts/MerriweatherSans-VariableFont_wght.ttf");
-  src-format: "tff-variations";
-  font-weight: 300 800;
-  font-optical-sizing: auto;
-}
-@font-face {
-  font-family: Comfortaa;
-  src: url("../fonts/Comfortaa-VariableFont_wght.ttf");
-  src-format: "tff supports variations";
-  src: url("../fonts/Comfortaa-VariableFont_wght.ttf");
-  src-format: "tff-variations";
-  font-weight: 300 700;
-}
-@font-face {
-  font-family: Latina;
-  src: url("../fonts/LatinaEssential-Light.otf");
-}
-@font-face {
-  font-family: hattori;
-  src: url("../fonts/hattori_light/Hattori_Hanzo-webfont.woff");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: hattori-italic;
-  src: url("../fonts/hattori_lightitalic/Hattori_Hanzo_Italic.woff");
-}
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
+/** @format */
 :root {
   --yellow-hue: 60;
   --green-hue: 120;
@@ -54,50 +14,10 @@
 /** @format */
 /** @format */
 /**
- * The new CSS Reset - version 1.3.1 (last updated 28.10.2021) **
- *
- * @format
- */
-/* Preferred box-sizing value */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-/* Remove list styles (bullets/numbers) */
-ol,
-ul {
-  list-style: none;
-}
-
-/* For images to not be able to exceed their container */
-img {
-  max-width: 100%;
-}
-
-/* removes spacing between cells in tables */
-table {
-  border-collapse: collapse;
-}
-
-/* revert the 'white-space' property for textarea elements on Safari */
-textarea {
-  white-space: revert;
-}
-
-/**
  * Box sizing rules
  *
  * @format
  */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-/* Remove default margin */
 body,
 h1,
 h2,
@@ -111,32 +31,27 @@ dd {
   margin: 0;
 }
 
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-/* Set core root defaults */
 html:focus-within {
   scroll-behavior: smooth;
 }
 
-/* Set core body defaults */
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
 
-/* A elements that don't have a class get default styles */
 a:not([class]) {
-  text-decoration-skip-ink: auto;
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
 }
 
-/* Make images easier to work with */
 img,
 picture {
   max-width: 100%;
   display: block;
 }
 
-/* Inherit fonts for inputs and buttons */
 input,
 button,
 textarea,
@@ -144,7 +59,6 @@ select {
   font: inherit;
 }
 
-/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
     scroll-behavior: auto;
@@ -165,7 +79,6 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-size: calc(60% + 0.8vmin);
 }
 
 body {
@@ -199,7 +112,6 @@ body {
 }
 /* Elements */
 p {
-  font-family: Latina;
   margin-top: 0.75rem;
 }
 
@@ -221,59 +133,8 @@ a:hover {
   color: #c94e4e;
 }
 
-.inline-list {
-  display: inline;
-}
-
 header a:link {
   padding: 5px 8px;
-}
-
-/*Common*/
-.underline {
-  border-bottom: 1px solid #000;
-}
-
-.error {
-  color: #841B2D;
-}
-
-.center-align {
-  text-align: center;
-}
-
-.left-align {
-  text-align: left;
-}
-
-.right-align {
-  text-align: right;
-}
-
-.text-small {
-  font-size: 0.85rem;
-}
-
-.height1 {
-  height: 6rem;
-}
-
-.hidden {
-  display: none;
-}
-
-.ital {
-  font-style: italic;
-  font-variant: small-caps;
-}
-
-.current {
-  background: #e9967a;
-  color: #140FA9 !important;
-}
-
-.white {
-  color: #fdf5ff;
 }
 
 /* typography */
@@ -300,33 +161,25 @@ h1 {
 
 h2 {
   font-size: 32px;
-  font-family: MerriweatherSans;
 }
 
 h3 {
   font-size: 28px;
-  font-family: MerriweatherSans;
 }
 
 h4 {
   font-size: 24px;
-  font-family: MerriweatherSans;
   margin-bottom: 0.75rem;
 }
 
 h5 {
   font-size: 20px;
-  font-family: MerriweatherSans;
   margin-bottom: 0.75rem;
 }
 
 h6 {
   font-size: 16px;
   margin-bottom: 0.75rem;
-}
-
-.fz75 {
-  font-size: 0.75rem;
 }
 
 button {
@@ -549,357 +402,174 @@ label {
   font-size: 18px;
 }
 
+.inline-list {
+  display: inline;
+}
+
 /*Cards */
+/*Common*/
+.underline {
+  border-bottom: 1px solid #000;
+}
+
+.error {
+  color: #841B2D;
+}
+
+.center-align {
+  text-align: center;
+}
+
+.left-align {
+  text-align: left;
+}
+
+.right-align {
+  text-align: right;
+}
+
+.text-small {
+  font-size: 0.85rem;
+}
+
+.height1 {
+  height: 6rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.ital {
+  font-style: italic;
+  font-variant: small-caps;
+}
+
+.current {
+  border: 1px solid #3209d0;
+  color: #140FA9 !important;
+  background: #ffd79a;
+}
+
+.white {
+  color: #fdf5ff;
+}
+
+.title {
+  font-size: 2.25rem;
+  color: #6868AC;
+  text-shadow: 1px 2px 1px #140FA9;
+  border: 3px solid #3209d0;
+  padding: 0 1rem;
+}
+
+.indent {
+  padding-left: 1rem;
+}
+
+.fz75 {
+  font-size: 0.75rem;
+}
+
+/* main theme colors */
+#prime {
+  background: #ffebcd;
+}
+
+.title {
+  background: #ffd79a;
+}
+
+article {
+  border-bottom: 2px solid #ffae34;
+}
+
+article:last-of-type {
+  border-bottom: none;
+}
+
+.footer {
+  border-top: 2px solid #ff9901;
+}
+
+.dark {
+  background-color: #521B29;
+  color: white;
+}
+
 /** @format */
 /** All prime container properties */
 #prime-container {
-  width: 80%;
-  margin: 0 auto;
+  max-width: 90rem;
+  margin-inline: auto;
   display: grid;
   height: auto;
   grid-column-gap: 1rem;
   grid-row-gap: 1rem;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 0.5fr repeat(5, 1fr);
+  grid-template-rows: 0.5fr repeat(4, 1fr);
 }
 
-#header {
+header.head {
   grid-column: 1/7;
-  display: flex;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
-#col-1 {
-  grid-column: 1/2;
-}
-
-#col-2 {
-  grid-column: 2/3;
-}
-
-#col-3 {
-  grid-column: 3/5;
-  grid-row: 2/6;
-}
-
-#col-4 {
-  grid-column: 5/7;
-}
-
-#col-5 {
-  grid-column: 1/3;
-}
-
-#col-6 {
-  grid-column: 5/7;
-}
-
-#col-9 {
-  grid-column: 5/7;
-}
-
-#col-10 {
-  grid-column: 1/3;
-}
-
-#col-11 {
-  grid-column: 5/7;
-  padding: 0;
-}
-
-#col-12 {
-  grid-column: 1/7;
-}
-
-#col-13 {
-  grid-column: 1/4;
-}
-
-#col-14 {
-  grid-column: 4/7;
-}
-
-.col {
-  border: 1px solid black;
-  background-color: var(--col-color);
+#left {
   padding: 0.5rem;
-  color: var(--prime-text);
-}
-
-/** @format
-	grid page 2
-*/
-#page2-container {
-  background-color: #C6AAAF;
-  width: 90%;
-  margin-inline: auto;
-  display: grid;
-  min-height: 100vh;
-  border: 2px solid #d2691e;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 0.75fr repeat(6, 1fr);
-  grid-gap: 2rem;
-}
-
-#top {
-  grid-column: 1/5;
-  display: flex;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.number1 {
   grid-column: 1/2;
-  grid-row: 2/4;
-}
-
-.number2 {
-  grid-column: 2/3;
-  grid-row: 2/4;
-  background: #6868AC;
-}
-
-.number3 {
-  grid-column: 1/3;
-  grid-row: 4/6;
-  background: #85A094;
-}
-
-#between {
-  grid-column: 3/5;
-  grid-row: 2/4;
-  background: #894B5D;
-}
-
-.number4 {
-  grid-column: 3/5;
-  grid-row: 4/6;
-  background: #A0838F;
-}
-
-.number5 {
-  grid-column: 1/2;
-  grid-row: 6/8;
-}
-
-.number6 {
-  grid-column: 2/3;
-  grid-row: 6/8;
-}
-
-.number7 {
-  grid-column: 3/4;
-  grid-row: 6/8;
-}
-
-.number8 {
-  grid-column: 4/5;
-  grid-row: 6/8;
-}
-
-.lined:first-child {
-  border-right: 1px solid green;
-}
-
-.lined:nth-child(2) {
-  border-left: 1px solid #000;
-}
-
-.border {
-  border: 1px solid var(--very-peri);
-  padding: 1rem;
-}
-
-.indent2 {
-  padding-left: 2rem;
-}
-
-.number3 > li {
-  columns: 3;
-  column-gap: 1rem;
-}
-
-.pad {
-  padding: 1rem;
-}
-
-.skeleton {
-  colums: 3;
-  column-gap: 1rem;
-}
-
-/** @format */
-#page3 {
-  background-color: blanchedalmond;
-}
-
-#grid3 {
-  min-height: 100vh;
-  width: calc(90% - 100px);
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 0.75fr auto;
-  grid-gap: 1rem;
-  background-color: #ffe4c4;
-}
-
-.block {
-  border: 1px solid red;
-  border-radius: 8px;
-  padding: 5px;
-}
-
-#main-top {
-  grid-column: 1/7;
-  display: flex;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.block1 {
-  grid-column: 1/4;
   grid-row: 2/5;
 }
 
-.block2 {
-  grid-column: 4/6;
+section {
+  grid-column: 2/6;
+  grid-row: 2/5;
+}
+section .section-head {
+  display: grid;
+  justify-content: center;
+  align-content: flex-start;
+}
+section article {
+  width: 98%;
+  margin: 1rem auto;
 }
 
-.block4 {
-  grid-row: 3/5;
-  grid-column: 4/6;
-}
-
-.block7 {
-  grid-row: 5/7;
-}
-
-.block8 {
-  grid-column: 2/4;
-}
-
-.block9 {
-  grid-column: 4/6;
-}
-
-.block10 {
+aside {
+  padding: 0.5rem;
   grid-column: 6/7;
-  grid-row: 5/7;
+  grid-row: 2/5;
 }
 
-.block11 {
-  grid-column: 2/4;
-}
-
-.block13 {
-  grid-column: 4/6;
-}
-
-.block15 {
-  grid-column: 2/4;
-}
-
-.block16 {
-  grid-column: 4/6;
-}
-
-.miki {
-  background-image: url("../images/purp-bg.png");
-  background-repeat: repeat;
-}
-.miki p {
-  color: gold;
-}
-
-img {
-  bject-fit: fill;
-}
-
-.lavender {
-  background-color: #fff0f5;
-}
-
-/** @format */
-#grid4 {
-  width: calc(85% - 100px);
-  margin-inline: auto;
-  min-height: 100vh;
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: 0.5fr auto;
-}
-
-.grid-top {
+footer {
   grid-column: 1/7;
-  display: flex;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-#article {
-  grid-column: 1/7;
-  grid-row: 2/7;
+  grid-row: 5/6;
   display: grid;
+  grid-template-columns: repeat(6, 1fr);
 }
-#article .sone {
-  grid-column: 1/4;
-  padding: 0 5px;
+footer #box1 {
+  grid-column: 1/2;
 }
-#article .stwo {
-  grid-column: 4/6;
-  padding: 0 5px;
+footer #box2 {
+  grid-column: 2/3;
 }
-#article .sthree {
+footer #box3 {
+  grid-column: 3/4;
+}
+footer #box4 {
+  grid-column: 4/5;
+}
+footer #box5 {
+  grid-column: 5/6;
+}
+footer #box6 {
   grid-column: 6/7;
-  padding: 0 5px;
 }
 
-#aside {
-  grid-column: 7/8;
-  grid-row: 2/8;
-  padding: 5px;
-}
-
-#foots {
-  grid-row: 7/8;
-  grid-column: 1/7;
-  border: 1px solid #d2691e;
-}
-
-.stwo {
-  background-color: #6868AC;
-}
-.stwo h3 {
-  color: #D3927D;
-}
-.stwo p {
-  color: #CDB97D;
-}
-.stwo p:nth-child(4) {
-  color: #D3927D;
-}
-
-.circle {
-  float: left;
-  margin: 10px;
-  shape-outside: circle(50%);
-  display: grid;
-  place-items: center;
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  background-color: #A0838F;
-  color: #CDB97D;
-}
-
-.moss > li {
-  color: #CDB97D;
+.box {
+  padding: 0.5rem;
 }
 
 /* Calendar if needed */
@@ -952,25 +622,5 @@ th {
   color: #050533;
 }
 
-/* main theme colors */
-:root {
-  --prime-color: #140FA9;
-  --head-color: #F7D31E;
-}
-
-#prime {
-  background-color: var(--prime-color);
-}
-
-#header {
-  background-color: var(--head-color);
-}
-
-.dark {
-  background-color: #521B29;
-  color: white;
-}
-
 /** @format */
-
 /*# sourceMappingURL=main.css.map */
