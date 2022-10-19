@@ -30,6 +30,10 @@ $desktop1: 1024px
 	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)
 		@content
 
+@mixin spaces($padding, $margin )
+	padding: $padding
+	margin: $margin
+
 @mixin border($pixel, $type, $color, $rad)
 	border-width: $pixel
 	border-style: $type

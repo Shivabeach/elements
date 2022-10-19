@@ -1,0 +1,37 @@
+/** @format */
+
+@use '../abstracts' as *;
+
+.dark {
+  background-color: $gen10;
+  color: white;
+}
+.ratingStar {
+  fill: #000000;
+}
+.ratingCanvas {
+}
+.ratingStar[data-emptystar] {
+  opacity: 0.2;
+}
+.ratingCanvas[data-unknown] {
+  opacity: 0.25;
+}
+.ratingCanvas.left {
+  margin-right: auto;
+  text-align: left;
+}
+.ratingStar[data-fullstar] {
+  opacity: 1;
+}
+.ratingStar[data-halfstar] {
+  -webkit-mask-image: -webkit-gradient(
+    linear,
+    left bottom,
+    right bottom,
+    color-stop(0%, rgba(0, 0, 0, 1)),
+    color-stop(45%, rgba(0, 0, 0, 1)),
+    color-stop(50%, rgba(0, 0, 0, 0.2)),
+    color-stop(100%, rgba(0, 0, 0, 0.2))
+  );
+}

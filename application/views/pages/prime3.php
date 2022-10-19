@@ -14,8 +14,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
 		<script>let FF_FOUC_FIX;</script>
 	</head>
-	<body id="prime">
-		<div id="prime-container">
+	<body id="prime3">
+		<div id="prime3-container">
 			<header class="head">
 				<span class="title"><?php echo $header;?></span>
 					<?php $this->load->view("menu/menu");?>
@@ -30,12 +30,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</div>
 		<section>
 			<header class="section-head">
-				<h3>Section title</h3>
+				<h3>Music Stats</h3>
 			</header>
-			<!-- json file entered here -->
-			<div id="article-container"></div>
+
+			<div id="article-container">
+        <?php $this->load->view("pages/music.htm");?>
+      </div>
 		</section>
-	<aside>Aside</aside>
+	<aside  class="aside">
+    <h3>Aside</h3>
+    </aside>
 <footer class="footer">
 	<div class="box" id="box1">
 	<div id="datey"></div>
@@ -51,6 +55,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 </footer>
 </div>
 <script type="module" src="<?php echo base_url('assets/js/script.js');?>"></script>
-<script type="module" src="<?php echo base_url('assets/js/prime-dist.js');?>"></script>
+<!-- <script type="module" src="<?php echo base_url('assets/js/prime-dist.js');?>"></script> -->
 </body>
 </html>

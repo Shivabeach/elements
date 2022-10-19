@@ -11,6 +11,26 @@ class Pages extends CI_Controller {
 		$this->load->view("pages/prime", $data);
 	}
 
+	public function page2()
+	{
+		$data["title"] = "Second Prime";
+		$data["header"] = "Page Two";
+		$this->load->view("pages/prime2", $data);
+	}
+
+	public function page3()
+	{
+		$data["title"] = "Music Prime";
+		$data["header"] = "Music";
+		$this->load->view("pages/prime3", $data);
+	}
+	public function page4()
+	{
+		$data["title"] = "Expenses";
+		$data["header"] = "Expenses";
+		$this->load->view("pages/prime4", $data);
+	}
+
 }
 
 /* End of file Pages.php */

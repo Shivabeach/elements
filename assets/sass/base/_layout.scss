@@ -1,0 +1,13 @@
+/** @format */
+
+@use 'variables' as *;
+html {
+  background-color: $viewport-background-color;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
