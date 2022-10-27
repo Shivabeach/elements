@@ -1,12 +1,12 @@
 /** @format */
-// import {
-// 	properCase,
-// 	log,
-// 	listen,
-// 	months,
-// 	addToArray,
-// 	sanitizeInput,
-// } from './utils.js';
+import {
+	properCase,
+	log,
+	listen,
+	months,
+	addToArray,
+	sanitizeInput,
+} from './utils.js';
 const number1 = document.querySelector('.no1');
 const number2 = document.querySelector('.no2');
 const click = document.querySelector('.click');
@@ -27,6 +27,10 @@ const reset = document.getElementById('reset1');
 
 let materialAmount = document.getElementById('materialAmount');
 let dilutionAmount = document.getElementById('dilutionAmount');
+
+const taxed = document.getElementById('taxed');
+const fullPrice = document.getElementById('fullPrice');
+const partialTotal = document.getElementById('partialTotal');
 
 function calculate() {
 	const one = number1.value;
@@ -98,6 +102,21 @@ function clear() {
 	dilutionAmount.textContent = '';
 }
 
+function taxable() {
+	let tax = taxed.value;
+	let tennTax = 0.07;
+	let taxInput = tax * tennTax; //right
+	partialTotal.innerHTML = `$${taxInput}`;
+	fullTax(taxInput);
+}
+
+function fullTax(taxInput) {
+	let y = +taxed.value;
+	let x = taxInput;
+	let part = (x + y).toFixed(2);
+	fullPrice.innerHTML = `$${part}`;
+}
+
 reset.addEventListener('click', () => {
 	clear();
 });
@@ -126,4 +145,7 @@ kiloToMiles.addEventListener('keyup', (e) => {
 click.addEventListener('click', (e) => {
 	e.preventDefault();
 	calculate();
+});
+taxed.addEventListener('keyup', (e) => {
+	taxable();
 });

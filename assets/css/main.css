@@ -331,7 +331,7 @@ td {
 
 /** @format */
 html {
-  color: #6868ac;
+  color: #0f060d;
   font-family: var(--font-family);
   font-size: 100%;
   line-height: var(--line-height);
@@ -785,6 +785,7 @@ th {
   text-shadow: 1px 2px 1px #140FA9;
   border: 3px solid #3209d0;
   padding: 0 1rem;
+  margin-right: 1rem;
 }
 
 .indent {
@@ -799,6 +800,10 @@ th {
   font-size: 20px;
   padding-left: 1rem;
   font-weight: 700;
+}
+
+.emp {
+  padding: 0.15rem;
 }
 
 /* main theme colors */

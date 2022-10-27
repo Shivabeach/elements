@@ -10,13 +10,13 @@ const copyr = document.querySelector('.copy');
 const str = 'Home';
 const item11 = str.link('http://elements/');
 item1.innerHTML = item11;
-const str2 = 'Page 2';
+const str2 = 'Conversions';
 const item22 = str2.link('http://elements/pages/page2');
 item2.innerHTML = item22;
 const str3 = 'Music';
 const item33 = str3.link('http://elements/pages/page3');
 item3.innerHTML = item33;
-const str4 = 'Page 4';
+const str4 = 'Budget';
 const item44 = str4.link('http://elements/pages/page4');
 item4.innerHTML = item44;
 

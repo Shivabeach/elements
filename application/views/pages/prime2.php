@@ -75,7 +75,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			Liters: <input type="text" id="liter" class="input-med-lg"/>
 			<p id="showLit"> </p>
 		</div>
-		<div class="card card2">Card2</div>
+		<div class="card card2">
+			<h6>Tennessee tax = .07</h6>
+			<input type="number" class="input-med-lg" id="taxed" placeholder="Purchase amount">
+			<p>Tax: <span id="partialTotal"></span>  </p>
+			<p>Amount with tax: <span id="fullPrice"></span>    </p>
+		</div>
 	</article>
 	<!-- Start section 2 Add in boxes or cards -->
 	<article class="two">
@@ -117,7 +122,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<div class="box" id="box6">box6</div>
 </footer>
 </div>
-<script type="module" src="<?php echo base_url('assets/js/script.js');?>"></script>
+<script type="module" src="<?php echo base_url('assets/js/script-dist.js');?>"></script>
 <script type="module" src="<?php echo base_url('assets/js/page2.js');?>"></script>
 </body>
 </html>

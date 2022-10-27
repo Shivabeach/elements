@@ -25,10 +25,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<h3>Data Entry</h3>
 				</header>
 				<p>
+
 					<form action="">
 						<input type="text" class="budget" placeholder="Budget amount"><br>
 						<button id="budget">Enter Budget</button>
 					</form>
+
+
 				</p>
 				<p>
 					<form action="">
@@ -52,7 +55,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							<th>Cash On Hand</th>
 						</tr>
 						<tr>
-							<td id="budgetAmount">1</td>
+							<td id="budgetAmount"></td>
 							<td id="totalLiabilities">1</td>
 							<td id="cashOnHand">1</td>
 						</tr>
@@ -84,7 +87,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<!-- <div class="box" id="box6">box6</div> -->
 			</footer>
 		</div>
-		<script type="module" src="<?php echo base_url('assets/js/script.js');?>"></script>
+		<script type="module" src="<?php echo base_url('assets/js/script-dist.js');?>"></script>
 		<script type="module" src="<?php echo base_url('assets/js/money-dist.js');?>"></script>
 	</body>
 </html>
