@@ -1,0 +1,85 @@
+/** @format */
+
+@use '../abstracts' as *;
+/* main theme colors */
+//https://www.youtube.com/watch?v=Xk12JtYG8rw
+:root[data-theme='light'] {
+	--page-bg: #e4e0fe;
+	--page-color: #140fa9;
+	--page-h3: #78421e;
+	--page-header: #ffeab3;
+	--page-footer: #ffd7cc;
+	--page-h4: #b3a786;
+	--page-li: #095aae;
+	--placeholder: #521b29;
+}
+
+:root[data-theme='dark'] {
+	--page-bg: #080b4a;
+	--page-color: #ebf056;
+	--page-h3: #87bde1;
+	--page-header: #066480;
+	--page-footer: #066480;
+	--page-h4: #b3a786;
+	--page-li: #cdb97d;
+	--responses: white;
+	--placeholder: #fad590;
+}
+
+body {
+	background-color: var(--page-bg);
+	color: var(--page-color);
+}
+h3 {
+	color: var(--page-h3);
+}
+h4 {
+	color: var(--page-h4);
+}
+.head {
+	background-color: var(--page-header);
+}
+.footer,
+.footers {
+	background-color: var(--page-footer);
+}
+li {
+	color: var(--page-li);
+}
+
+#theme-switcher {
+	border: 1px solid #740334;
+	border-radius: 25%;
+	display: flex;
+	justify-content: space-around;
+	align-content: center;
+	img {
+		padding-top: 5px;
+	}
+}
+
+.calculated,
+#convertedMiles,
+#showMiles,
+.ounceOutput,
+.lbOutput,
+#formOutput,
+#miles2,
+#outputFahrenheit,
+.showOz,
+#showLit,
+#showCm,
+.mm,
+#partialTotal,
+#fullPrice,
+#materialAmount,
+#dilutionAmount {
+	color: var(--responses);
+}
+
+input {
+	color: var(--responses);
+}
+input::placeholder {
+	color: var(--placeholder);
+}

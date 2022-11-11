@@ -4,7 +4,7 @@ const item1 = document.querySelector('.item-1');
 const item2 = document.querySelector('.item-2');
 const item3 = document.querySelector('.item-3');
 const item4 = document.querySelector('.item-4');
-let datey = document.getElementById('datey');
+const datey = document.getElementById('datey');
 const copyr = document.querySelector('.copy');
 // site links
 const str = 'Home';
@@ -37,20 +37,43 @@ function returnDate() {
 }
 returnDate();
 
-let yer = new Date();
-copyr.innerHTML = `Elements \u00A92019 - ${yer.getFullYear()}`; //copywright
+const yer = new Date();
+copyr.innerHTML = `Elements \u00A92019 - ${yer.getFullYear()}`; // copywright
 
-for (let i = 0; i < document.links.length; i++) {
-  // this highlights the current active link
-  if (document.links[i].href === document.URL) {
-    document.links[i].className = 'current';
-  }
+//
+// Envato https://www.youtube.com/watch?v=Xk12JtYG8rw&t=2035s
+//--------------------------------------------------------------------------
+const switchTheme = () => {
+  //body tag
+  const rootElem = document.documentElement;
+  // data- of the body tag
+  let dataTheme = rootElem.getAttribute('data-theme'),
+    newTheme;
+  // if the data- is light, change to dark
+  newTheme = dataTheme === 'light' ? 'dark' : 'light';
+  //change the data- to one color or the other
+  rootElem.setAttribute('data-theme', newTheme);
+  // set the body tag attr in localstorage
+  localStorage.setItem('theme', newTheme);
+};
+
+if (document.querySelector('#theme-switcher')) {
+  document
+    .querySelector('#theme-switcher')
+    .addEventListener('click', switchTheme);
 }
-addEventListener('DOMContentLoaded', () => {
-  //console.time();
-  const h = Math.floor(Math.random() * 360);
-  let col = `hsl(${h}deg, 100%, 90%)`;
-  document.body.style.backgroundColor = col;
-  document.querySelector('.color').innerText = col;
-  //console.timeEnd();
-});
+
+// for (let i = 0; i < document.links.length; i++) {
+//   // this highlights the current active link
+//   if (document.links[i].href === document.URL) {
+//     document.links[i].className = 'current';
+//   }
+// }
+// addEventListener('DOMContentLoaded', () => {
+//   // console.time();
+//   const h = Math.floor(Math.random() * 360)
+//   const col = `hsl(${h}deg, 100%, 90%)`
+//   document.body.style.backgroundColor = col
+//   document.querySelector('.color').innerText = col
+//   // console.timeEnd();
+// })

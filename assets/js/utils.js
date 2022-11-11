@@ -56,7 +56,7 @@ export const sanitizeInput = (inputValue) => {
 };
 //const cleanInput = sanitizeInput(stringtoclean);
 //console.log(cleanInput);
-export let months = [
+export const months = [
 	'January',
 	'February',
 	'March',

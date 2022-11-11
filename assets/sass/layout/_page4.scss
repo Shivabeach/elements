@@ -35,10 +35,10 @@ header.heads {
 	border: 1px solid var(--granite-green);
 }
 .footer {
-	grid-column: 1/6;
+	grid-column: 1/7;
 	grid-row: 5/6;
-	display: grid;
-	grid-template-columns: repeat(5, 1fr);
+	// display: grid;
+	// grid-template-columns: repeat(5, 1fr);
 	#box1 {
 		grid-column: 1/2;
 	}
@@ -56,10 +56,5 @@ header.heads {
 	}
 	#box6 {
 		grid-column: 6/7;
-	}
-}
-.heady {
-	h3 {
-		text-align: center;
 	}
 }

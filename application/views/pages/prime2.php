@@ -2,15 +2,19 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 	<head>
 		<meta charset="UTF-8">
-		<title>
-		<?php echo $title;?>
-		</title>
-		<link rel="stylesheet" href="<?php echo base_url('assets/css/main.min.css');?>">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title><?php echo $title;?></title>
+		<script>
+			let localS = localStorage.getItem("theme"),
+			themeToSet = localS
+			document.documentElement.setAttribute("data-theme", themeToSet)
+		</script>
+		<link rel="stylesheet" href="<?php echo base_url('assets/css/main.min.css');?>">
+
 		<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
 		<script>let FF_FOUC_FIX;</script>
 	</head>
@@ -49,8 +53,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<label>Grams 2 Ounces</label>
 						<input class="input-med trans" id="inputgrams" type="number" placeholder="Grams">
 					</p>
-					<p>Response: <span class="form-Output" id="ounceOutput"></span></p>
-					<p>Response: <span class="form-Output" id="lbOutput"></span></p>
+					<p>Ounces: <span class="form-Output" id="ounceOutput"></span></p>
+					<p>Pounds: <span class="form-Output" id="lbOutput"></span></p>
+					<p>Kilograms: <span class="kilograms"></span>  </p>
 				</div>
 				<div class="card card2">
 					<label>Meters 2 Feet</label>
@@ -81,9 +86,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<p>Tax: <span id="partialTotal"></span>  </p>
 			<p>Amount with tax: <span id="fullPrice"></span>    </p>
 		</div>
+		<div class="card card1">
+			<label for="cm">Centimeters to Inches</label>
+			Centimeters: <input type="text" id="cm" class="input-med-lg"/>
+			<p id="showCm"> </p>
+			<p class="mm"></p>
+		</div>
+		<div class="card card2">
+			<h6>Open area</h6>
+
+		</div>
 	</article>
 	<!-- Start section 2 Add in boxes or cards -->
 	<article class="two">
+		<h3>Liquids</h3>
 
 		<div class="card3 bottom">
 			<form>
@@ -116,7 +132,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<div class="box" id="box3">box 3
 	</div>
 	<div class="box" id="box4">
-		<div class="color"></div>
+		<div class="color">This is box 4</div>
 	</div>
 	<div class="box" id="box5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, ex.</div>
 	<div class="box" id="box6">box6</div>

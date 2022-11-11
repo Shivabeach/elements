@@ -1,9 +1,11 @@
 /** @format */
 import { stories } from './stories.js';
+const iconSun = document.querySelector('.icon-sun');
+const iconMoon = document.querySelector('.icon-moon');
 const ac = document.getElementById('article-container');
 const titleList = document.getElementById('title-list');
-let tit = '';
-let stores = '';
+let tit,
+	stores = '';
 
 stories.forEach((store) => {
 	stores += `
