@@ -1,4 +1,10 @@
 /** @format */
+
+const colors = ['green', '', '', 'blue', 'white', ''];
+
+const unique = Array.from(new Set(colors));
+console.log(unique);
+
 const random = (max = 1000) => {
 	return Math.floor(Math.random() * max);
 };

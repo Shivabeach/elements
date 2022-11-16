@@ -404,17 +404,6 @@ blockquote {
 }
 
 /* Links */
-a {
-  color: hsl(336deg, 86%, 24%);
-  text-decoration: none;
-}
-a:visited {
-  color: hsl(346deg, 81%, 9%);
-}
-a:hover {
-  color: hsl(0deg, 53.25%, 54.71%);
-}
-
 header a:link {
   padding: 5px 8px;
 }
@@ -838,6 +827,9 @@ article:last-of-type {
   --page-li: #cdb97d;
   --responses: white;
   --placeholder: #fad590;
+  --a-link: white;
+  --a-link-hover: #cc9d1f;
+  --a-visited: yellow;
 }
 
 body {
@@ -855,6 +847,20 @@ h4 {
 
 .head {
   background-color: var(--page-header);
+}
+.head a:link {
+  color: var(--a-link);
+  text-decoration: none;
+}
+.head a:visited {
+  color: var(--a-visited);
+}
+.head a:hover {
+  color: var(--a-link-hover);
+  box-shadow: 0 0 15px #fffde7;
+  outline-color: yellow;
+  outline-style: outset;
+  outline-offset: 10px;
 }
 
 .footer,

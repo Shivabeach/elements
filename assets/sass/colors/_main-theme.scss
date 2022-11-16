@@ -24,6 +24,9 @@
 	--page-li: #cdb97d;
 	--responses: white;
 	--placeholder: #fad590;
+	--a-link: white;
+	--a-link-hover: #cc9d1f;
+	--a-visited: yellow;
 }
 
 body {
@@ -38,6 +41,21 @@ h4 {
 }
 .head {
 	background-color: var(--page-header);
+
+	a:link {
+		color: var(--a-link);
+		text-decoration: none;
+	}
+	a:visited {
+		color: var(--a-visited);
+	}
+	a:hover {
+		color: var(--a-link-hover);
+		box-shadow: 0 0 15px #fffde7;
+		outline-color: yellow;
+		outline-style: outset;
+		outline-offset: 10px;
+	}
 }
 .footer,
 .footers {

@@ -23,3 +23,8 @@ stories.forEach((titles) => {
 	`;
 	titleList.innerHTML = tit;
 });
+
+// Get first letter
+// const cars = ['BMW', 'Honda', 'Ford', 'GM'];
+// const first = cars.map((car) => car[0]);
+// console.log(first);
