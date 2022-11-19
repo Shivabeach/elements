@@ -107,7 +107,7 @@ legend {
 }
 
 label {
-  display: block;
+  display: inline;
   font-weight: 600;
   margin-bottom: var(--spacing--small);
 }
@@ -115,7 +115,6 @@ label {
 input,
 select,
 textarea {
-  display: block;
   font-family: var(--font-family);
   font-size: 1rem;
 }
@@ -233,6 +232,10 @@ textarea {
 [type=radio] {
   display: inline;
   margin-right: var(--spacing--small);
+}
+[type=checkbox]:checked,
+[type=radio]:checked {
+  background: green;
 }
 
 [type=file] {
@@ -484,10 +487,6 @@ input[type=checkbox]:checked {
   background-color: green;
 }
 
-label {
-  display: block;
-}
-
 .input-small {
   width: 10%;
 }
@@ -708,6 +707,10 @@ th {
   border: 1px solid #36013f;
 }
 
+.symbils::has(label) {
+  display: inline;
+}
+
 /*Common*/
 .underline {
   border-bottom: 1px solid #000;
@@ -812,9 +815,12 @@ article:last-of-type {
   --page-h3: #78421e;
   --page-header: #ffeab3;
   --page-footer: #ffd7cc;
-  --page-h4: #b3a786;
+  --page-h4: #140fa9;
   --page-li: #095aae;
   --placeholder: #521b29;
+  --a-link: #1e2227;
+  --a-link-hover: #cc9d1f;
+  --a-visited: #fe5532;
 }
 
 :root[data-theme=dark] {
@@ -823,7 +829,7 @@ article:last-of-type {
   --page-h3: #87bde1;
   --page-header: #066480;
   --page-footer: #066480;
-  --page-h4: #b3a786;
+  --page-h4: #b247b2;
   --page-li: #cdb97d;
   --responses: white;
   --placeholder: #fad590;
@@ -857,7 +863,7 @@ h4 {
 }
 .head a:hover {
   color: var(--a-link-hover);
-  box-shadow: 0 0 15px #fffde7;
+  box-shadow: 0 0 15px #868e96;
   outline-color: yellow;
   outline-style: outset;
   outline-offset: 10px;
@@ -908,6 +914,17 @@ input {
 
 input::placeholder {
   color: var(--placeholder);
+}
+
+p a {
+  color: var(--a-link);
+  font-weight: 800;
+}
+p a:visited {
+  color: var(--a-visited);
+}
+p a:hover {
+  color: var(--a-link-hover);
 }
 
 /** @format */

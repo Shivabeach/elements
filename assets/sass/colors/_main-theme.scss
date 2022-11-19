@@ -9,9 +9,12 @@
 	--page-h3: #78421e;
 	--page-header: #ffeab3;
 	--page-footer: #ffd7cc;
-	--page-h4: #b3a786;
+	--page-h4: #140fa9;
 	--page-li: #095aae;
 	--placeholder: #521b29;
+	--a-link: #1e2227;
+	--a-link-hover: #cc9d1f;
+	--a-visited: #fe5532;
 }
 
 :root[data-theme='dark'] {
@@ -20,7 +23,7 @@
 	--page-h3: #87bde1;
 	--page-header: #066480;
 	--page-footer: #066480;
-	--page-h4: #b3a786;
+	--page-h4: #b247b2;
 	--page-li: #cdb97d;
 	--responses: white;
 	--placeholder: #fad590;
@@ -51,7 +54,7 @@ h4 {
 	}
 	a:hover {
 		color: var(--a-link-hover);
-		box-shadow: 0 0 15px #fffde7;
+		box-shadow: 0 0 15px #868e96;
 		outline-color: yellow;
 		outline-style: outset;
 		outline-offset: 10px;
@@ -100,4 +103,17 @@ input {
 }
 input::placeholder {
 	color: var(--placeholder);
+}
+p {
+	a {
+		//font-size: 1.1rem;
+		color: var(--a-link);
+		font-weight: 800;
+	}
+	a:visited {
+		color: var(--a-visited);
+	}
+	a:hover {
+		color: var(--a-link-hover);
+	}
 }

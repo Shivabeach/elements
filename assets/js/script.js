@@ -1,4 +1,5 @@
 /** @format */
+'use strict';
 import { properCase, log, months, addToArray } from './utils.js';
 const item1 = document.querySelector('.item-1');
 const item2 = document.querySelector('.item-2');

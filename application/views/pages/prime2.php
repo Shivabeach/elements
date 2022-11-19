@@ -71,13 +71,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<p>Fahrenheit: <span class="form-Output" id="outputFahrenheit"></span></p>
 		</div>
 		<div class="card card2">
-			<label for="ml">Mililiters To Convert to Ounces</label>
-			Mililiters: <input type="number" id="ml" class="input-med-lg"/>
+			<label for="ml">Ml To Oz</label><input type="number" id="ml" class="input-med"/>
 			<p class="showOz"> </p>
 		</div>
 		<div class="card card1">
 			<label for="ml">Liters To Ounces</label>
-			Liters: <input type="text" id="liter" class="input-med-lg"/>
+			<input type="text" id="liter" class="input-date"/>
 			<p id="showLit"> </p>
 		</div>
 		<div class="card card2">
@@ -99,9 +98,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	</article>
 	<!-- Start section 2 Add in boxes or cards -->
 	<article class="two">
-		<h3>Liquids</h3>
-
 		<div class="card3 bottom">
+			<h3>Liquids</h3>
 			<form>
 				<label for="ounces">Ounces To Fill</label>
 				<input class="input-med" type="number" id="ounces" /><br>
@@ -116,7 +114,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 			<p class="emp">Water <span id="dilutionAmount" class="bold-8"> </span> </p>
 		</div>
+		<div class="card3 bottom">
+			<h3>Mathematics</h3>
+			<div class="symbils">
+				<form action="">
+				<input type="checkbox" name="add" id="add" value="add"><label for="add">Add +</label>
+				<input type="checkbox" name="subtract" id="subtract" value="Subtract"><label for="subtract">Subtract +</label>
+				<input type="checkbox" name="multiply" id="multiply" value="Multiply"><label for="multiply">Multiply *</label>
+				<input type="checkbox" name="divide" id="divide" value="Divide"><label for="divide">Divide /</label>
+				<input type="number" class="a1 input-med"> - <input type="number" class="a2 input-med">
+			</form>
+			<div>Response: <span class="response"> </span> </div>
+		</div>
 	</article>
+
 </section>
 <aside id="right">Right
 	<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed non sapiente quos qui placeat ullam dolorem consequuntur incidunt. Necessitatibus, fugit.</p>

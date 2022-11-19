@@ -1,4 +1,5 @@
 /** @format */
+'use strict';
 const available = document.querySelector('.budget');
 const amount = document.querySelector('.amount');
 const reason = document.querySelector('.reason');

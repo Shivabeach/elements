@@ -22,3 +22,6 @@
   padding-bottom: 1rem;
   border: 1px solid $deep-purple;
 }
+.symbils::has(label) {
+  display: inline;
+}

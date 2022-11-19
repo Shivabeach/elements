@@ -1,4 +1,5 @@
 /** @format */
+'use strict';
 import {
   properCase,
   log,
@@ -7,7 +8,7 @@ import {
   addToArray,
   sanitizeInput,
 } from './utils.js';
-('use strict');
+
 const number1 = document.querySelector('.no1');
 const number2 = document.querySelector('.no2');
 const click = document.querySelector('.click');
@@ -38,6 +39,12 @@ const partialTotal = document.getElementById('partialTotal');
 const cm = document.getElementById('cm');
 const showCm = document.getElementById('showCm');
 const mm = document.querySelector('.mm');
+
+const add = document.querySelector('#add');
+const subtract = document.querySelector('#subtract');
+const multiply = document.querySelector('#multiply');
+const divide = document.querySelector('#divide');
+const response = document.querySelector('.response');
 
 function calculate() {
   const one = number1.value;

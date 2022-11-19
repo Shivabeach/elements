@@ -1,4 +1,5 @@
 /** @format */
+'use strict';
 //Dave Gray https://www.youtube.com/watch?v=LDgPTw6tePk
 //
 // import{properCase, log} from "utils.js" on other JS file
