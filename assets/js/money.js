@@ -1,5 +1,6 @@
 /** @format */
 'use strict';
+const see = document.querySelector('#see');
 const available = document.querySelector('.budget');
 const amount = document.querySelector('.amount');
 const reason = document.querySelector('.reason');
@@ -62,3 +63,10 @@ record.addEventListener('click', (e) => {
 addEventListener('DOMContentLoaded', () => {
 	getStore();
 });
+
+fetch('http://localhost/elements/assets/js/data.json')
+	.then((resp) => resp.json())
+	.then((json) => {
+		//console.log(json.likes[1]);
+		//do what will be done here. Display it, use foreach ect
+	});

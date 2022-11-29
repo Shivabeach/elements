@@ -80,6 +80,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 				</table>
 			</article>
+			<article id="see"></article>
 		</section>
 		<footer class="footer">
 			<div class="box" id="box1">

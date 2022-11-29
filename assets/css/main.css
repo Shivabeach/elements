@@ -807,6 +807,11 @@ article:last-of-type {
   border-top: 2px solid #ff9901;
 }
 
+.dates {
+  text-align: right;
+  padding-right: 3rem;
+}
+
 /** @format */
 /* main theme colors */
 :root[data-theme=light] {

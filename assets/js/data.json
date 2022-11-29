@@ -1,0 +1,28 @@
+{
+	"users": [
+		{
+			"age": 72,
+			"likes": {
+				"animal1": "cats",
+				"animal2": "dogs"
+			},
+			"name": "brad"
+		},
+		{
+			"age": 74,
+			"likes": {
+				"animal1": "fish",
+				"animal2": "cows"
+			},
+			"name": "Kim"
+		},
+		{
+			"age": 69,
+			"likes": {
+				"animal1": "Bees",
+				"animal2": "bears"
+			},
+			"name": "Missy"
+		}
+	]
+}

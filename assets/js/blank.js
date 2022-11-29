@@ -92,4 +92,10 @@ studentForm.onsubmit = (e) => {
 	ageInput.value = '';
 	rollInput.value = '';
 };
-//
+//https://jsonplaceholder.typicode.com/
+fetch(data.json)
+	.then((resp) => resp.json())
+	.then((json) => {
+		console.log(json.users.name);
+		//do what will be done here. Display it, use foreach ect
+	});

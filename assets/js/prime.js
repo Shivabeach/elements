@@ -11,10 +11,12 @@ stories.forEach((store) => {
 	<article>
 		<h4>${store.title}</h4>
 		<div class="indent">${store.story}</div>
+		<div class="dates">${store.date}</div>
 	</article>
 	`;
 	ac.innerHTML = stores;
 });
+
 stories.forEach((titles) => {
 	tit += `
 		<li>${titles.title}</li>

@@ -1,28 +1,27 @@
 /** @format */
 export const stories = [
 	{
+		title: 'Coming Home',
+		date: '11/26/2022',
+		story:
+			'<p>Kim comes home today. I hope she had a good time. I missed her greatly</p><p>She should be landing at 4:50pm</p>',
+	},
+	{
+		title: 'Boing',
+		date: '11/23/2022',
+		story:
+			'<p>Well, the fix didnt last. In trying to restore the computer to a previous date, Kaspersky refusesd to let it happen. Something got corrupted, and DISM nor Filechecker couldnt fix it. It ended up that windows would not boot up at all.</p><p>Fortunately I had cloned the drive onlo another M2 SSD, and was able to go back to that. Very painful</p>',
+	},
+	{
 		title: 'Today',
 		story:
 			'<p>Today the wamp server quit working. I left a message at the <a title="Wamp" href="http://forum.wampserver.com/list.php?2">Wamp forums </a> but as of today there is no response</p><p>It appears that one cannot write a story in the way one things they should</p><p>I am hoping this will be fixed soon. I must consider moving to non-database sights</p><p>This was resolved by upgrading to a new version of MySQL and putting in the old sql backups</p>',
+		date: '11/21/2022',
 	},
 	{
 		title: 'Eating Habits',
 		story:
 			'<p>Stop eating just to eat. Stop eating garbage <br> No Cookies</p>',
-	},
-	{
-		title: 'Article Two',
-		story:
-			'<p>He spoke with the President Marcel Rebel de Souza.</p> He thanked for the closed skies for Russian planes, support for the decision to disconnect Russia from SWIFT and specific defense assistance. <br>Portugal provided the Flag of Ukraine with weapons, personal protection and other equipment. <br>Together - stronger.',
-	},
-	{
-		title: 'Article Three',
-		story:
-			'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ducimus excepturi enim vitae est ut reiciendis, ullam delectus, aspernatur ipsam, necessitatibus.',
-	},
-	{
-		title: 'Article Four',
-		story:
-			'<p>He spoke with the President Marcel Rebel de Souza.</p> He thanked for the closed skies for Russian planes, support for the decision to disconnect Russia from SWIFT and specific defense assistance. <br>Portugal provided the Flag of Ukraine with weapons, personal protection and other equipment. <br>Together - stronger.',
+		date: '6/1/2022',
 	},
 ];

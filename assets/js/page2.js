@@ -45,6 +45,9 @@ const subtract = document.querySelector('#subtract');
 const multiply = document.querySelector('#multiply');
 const divide = document.querySelector('#divide');
 const response = document.querySelector('.response');
+const knotResponse = document.querySelector('.knotResponse');
+const knot = document.querySelector('.knot');
+const KNOT_TO_MPH = 1.150779;
 
 function calculate() {
   const one = number1.value;
@@ -135,7 +138,13 @@ function fullTax(taxInput) {
   const y = +taxed.value;
   const x = taxInput;
   const part = (x + y).toFixed(2);
-  fullPrice.innerHTML = `$${part}`;
+  const parts = sanitizeInput(part);
+  fullPrice.innerHTML = `$${parts}`;
+}
+
+function knotToMph(value) {
+  const knotted = knot.value * KNOT_TO_MPH.toFixed(2);
+  knotResponse.innerHTML = knotted;
 }
 
 reset.addEventListener('click', () => {
@@ -172,4 +181,7 @@ taxed.addEventListener('keyup', (e) => {
 });
 cm.addEventListener('keyup', () => {
   cmToIn();
+});
+knot.addEventListener('keyup', () => {
+  knotToMph();
 });

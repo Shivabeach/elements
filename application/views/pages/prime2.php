@@ -14,7 +14,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			document.documentElement.setAttribute("data-theme", themeToSet)
 		</script>
 		<link rel="stylesheet" href="<?php echo base_url('assets/css/main.min.css');?>">
-
 		<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
 		<script>let FF_FOUC_FIX;</script>
 	</head>
@@ -93,7 +92,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</div>
 		<div class="card card2">
 			<h6>Open area</h6>
-
 		</div>
 	</article>
 	<!-- Start section 2 Add in boxes or cards -->
@@ -107,27 +105,30 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<input class="input-med" type="number" id="ratio"><br>
 				<button type="submit" class="none" id="cripes" value="Submit">Submit</button>
 				<button type="reset" class="none" value="Do Over" id="reset1">Reset</button>
-		</form>
-
+			</form>
 			<div id="validity"></div>
 			<p class="emp">Dilutable Material <span id="materialAmount" class="bold-8"> </span> </p>
-
 			<p class="emp">Water <span id="dilutionAmount" class="bold-8"> </span> </p>
 		</div>
 		<div class="card3 bottom">
 			<h3>Mathematics</h3>
 			<div class="symbils">
 				<form action="">
-				<input type="checkbox" name="add" id="add" value="add"><label for="add">Add +</label>
-				<input type="checkbox" name="subtract" id="subtract" value="Subtract"><label for="subtract">Subtract +</label>
-				<input type="checkbox" name="multiply" id="multiply" value="Multiply"><label for="multiply">Multiply *</label>
-				<input type="checkbox" name="divide" id="divide" value="Divide"><label for="divide">Divide /</label>
-				<input type="number" class="a1 input-med"> - <input type="number" class="a2 input-med">
-			</form>
-			<div>Response: <span class="response"> </span> </div>
+					<input type="checkbox" name="add" id="add" value="add"><label for="add">Add +</label>
+					<input type="checkbox" name="subtract" id="subtract" value="Subtract"><label for="subtract">Subtract +</label>
+					<input type="checkbox" name="multiply" id="multiply" value="Multiply"><label for="multiply">Multiply *</label>
+					<input type="checkbox" name="divide" id="divide" value="Divide"><label for="divide">Divide /</label>
+					<input type="number" class="a1 input-med"> - <input type="number" class="a2 input-med">
+				</form>
+				<div>Response: <span class="response"> </span> </div>
+			</div>
+		</div>
+		<div class="card3 bottom">
+			<h3>Knots to MPH</h3>
+			<input type="number" class="knot input-med">
+			<div>Response: <span class="knotResponse"></span></div>
 		</div>
 	</article>
-
 </section>
 <aside id="right">Right
 	<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed non sapiente quos qui placeat ullam dolorem consequuntur incidunt. Necessitatibus, fugit.</p>
