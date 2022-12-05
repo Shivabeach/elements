@@ -48,6 +48,7 @@ const response = document.querySelector('.response');
 const knotResponse = document.querySelector('.knotResponse');
 const knot = document.querySelector('.knot');
 const KNOT_TO_MPH = 1.150779;
+const LITER_TO_GAL = 0.2641729;
 
 function calculate() {
   const one = number1.value;
@@ -90,8 +91,8 @@ function mlToOz() {
   showOz.innerHTML = (ml.value * 0.03381).toFixed(2) + ' Ounces';
 }
 
-function lToOz(lite) {
-  showLit.innerHTML = (liter.value * 33.814).toFixed(2) + ' Ounces';
+function ltToGal(lite) {
+  showLit.innerHTML = (liter.value * LITER_TO_GAL).toFixed(2) + ' Gallons';
 }
 
 function cmToIn() {
@@ -144,7 +145,7 @@ function fullTax(taxInput) {
 
 function knotToMph(value) {
   const knotted = knot.value * KNOT_TO_MPH.toFixed(2);
-  knotResponse.innerHTML = knotted;
+  knotResponse.innerHTML = `${knotted} MPH`;
 }
 
 reset.addEventListener('click', () => {
@@ -152,7 +153,7 @@ reset.addEventListener('click', () => {
 });
 
 ml.addEventListener('keyup', mlToOz);
-liter.addEventListener('keyup', lToOz);
+liter.addEventListener('keyup', ltToGal);
 
 inputCelsius.addEventListener('keyup', () => {
   temperatureConverter();

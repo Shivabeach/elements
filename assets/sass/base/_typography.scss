@@ -3,7 +3,7 @@
 @use 'variables' as *;
 html {
   color: $font-color--base;
-  font-family: var(--font-family);
+  font-family: arial;
   font-size: 100%;
   line-height: var(--line-height);
 }
@@ -38,11 +38,3 @@ p {
 //     outline-offset: var(--focus-outline-offset);
 //   }
 // }
-
-hr {
-  border-bottom: var(--border);
-  border-left: 0;
-  border-right: 0;
-  border-top: 0;
-  margin: var(--spacing) 0;
-}

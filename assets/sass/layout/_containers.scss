@@ -5,7 +5,7 @@
 // prime page grid layout
 #prime-container,
 #prime3-container {
-  max-width: 90rem;
+  max-width: 95rem;
   margin-inline: auto;
   display: grid;
   min-height: 100vh;
@@ -31,7 +31,7 @@ header.head {
 section {
   grid-column: 2 / 6;
   grid-row: 2/5;
-  //@include borders(1px, solid, $elderberry);
+
   .section-head {
     display: grid;
     justify-content: center;

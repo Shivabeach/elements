@@ -11,10 +11,128 @@
   --granite-green: #85A094;
 }
 
-/** @format */ /** @format */ /** @format */
+/** @format */ /**
+ *  This is the reset page
+ *
+ * @format
+ */
+:root {
+  --spacing: 1.5rem;
+  --border: 0.0625rem solid currentColor;
+  --line-height--heading: 1.2;
+  --spacing--small: 0.75rem;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ul li,
+ol li {
+  margin-left: 1rem;
+  padding: 5px 0;
+}
+
+dl {
+  margin: 0;
+}
+
+dt {
+  font-weight: 600;
+  margin: 0;
+}
+
+dd {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  margin: var(--spacing) 0;
+  table-layout: fixed;
+  text-align: left;
+  width: 100%;
+}
+
+thead {
+  line-height: var(--line-height--heading);
+  vertical-align: bottom;
+}
+
+tbody {
+  vertical-align: top;
+}
+
+tr {
+  border-bottom: var(--border);
+}
+
+th {
+  font-weight: 600;
+}
+
+th,
+td {
+  padding: var(--spacing--small) var(--spacing--small) var(--spacing--small) 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+hr {
+  border-bottom: 0.0625rem;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: var(--spacing) 0;
+}
+
+figure {
+  margin: 0;
+}
+
+img,
+picture {
+  margin: 0;
+  max-width: 100%;
+}
+
+/** @format */ /** @format */
 /* From base */
 :root {
-  --font-family: $concert;
+  --font-family: Helvetica Neue;
   --font-family--heading: var(--font-family);
   --font-weight--thin: 100;
   --font-weight--extra-light: 200;
@@ -257,72 +375,9 @@ select:focus {
 }
 
 /** @format */
-ul,
-ol {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-dl {
-  margin: 0;
-}
-
-dt {
-  font-weight: 600;
-  margin: 0;
-}
-
-dd {
-  margin: 0;
-}
-
-/** @format */
-figure {
-  margin: 0;
-}
-
-img,
-picture {
-  margin: 0;
-  max-width: 100%;
-}
-
-/** @format */
-table {
-  border-collapse: collapse;
-  margin: var(--spacing) 0;
-  table-layout: fixed;
-  text-align: left;
-  width: 100%;
-}
-
-thead {
-  line-height: var(--line-height--heading);
-  vertical-align: bottom;
-}
-
-tbody {
-  vertical-align: top;
-}
-
-tr {
-  border-bottom: var(--border);
-}
-
-th {
-  font-weight: 600;
-}
-
-th,
-td {
-  padding: var(--spacing--small) var(--spacing--small) var(--spacing--small) 0;
-}
-
-/** @format */
 html {
   color: #0f060d;
-  font-family: var(--font-family);
+  font-family: arial;
   font-size: 100%;
   line-height: var(--line-height);
 }
@@ -343,37 +398,8 @@ p {
   margin: 0 0 var(--spacing--small);
 }
 
-hr {
-  border-bottom: var(--border);
-  border-left: 0;
-  border-right: 0;
-  border-top: 0;
-  margin: var(--spacing) 0;
-}
-
 /** @format */
 /* body */
-html,
-body {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  min-height: 100vh;
-  scroll-behavior: smooth;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  line-height: 1.5;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
 ::-webkit-scrollbar {
   width: 1.5em;
 }
@@ -697,14 +723,11 @@ th {
   grid-column: 2/3;
 }
 
+.card,
 .card3 {
-  border-bottom: 1px solid #000;
-}
-
-.card {
   padding-left: 1rem;
   padding-bottom: 1rem;
-  border: 1px solid #36013f;
+  border: 1px solid hsl(22deg, 95%, 42%);
 }
 
 .symbils::has(label) {
@@ -841,6 +864,7 @@ article:last-of-type {
   --a-link: white;
   --a-link-hover: #cc9d1f;
   --a-visited: yellow;
+  --page-u: #4fc3f7;
 }
 
 body {
@@ -932,6 +956,12 @@ p a:hover {
   color: var(--a-link-hover);
 }
 
+u {
+  color: var(--page-u);
+  text-shadow: 0 0 2px #0277bd;
+  font-family: "Georgia", "Times", "Times New Roman", serif;
+}
+
 /** @format */
 .dark {
   background-color: #521B29;
@@ -967,7 +997,7 @@ p a:hover {
 /** All prime container properties */
 #prime-container,
 #prime3-container {
-  max-width: 90rem;
+  max-width: 95rem;
   margin-inline: auto;
   display: grid;
   min-height: 100vh;
@@ -1152,6 +1182,22 @@ header.heads {
 }
 .footer #box6 {
   grid-column: 6/7;
+}
+
+/** @format */
+#article-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1rem;
+}
+
+.parcel {
+  min-height: 300px;
+  border: 1px solid hsl(22deg, 95%, 42%);
+}
+
+.music {
+  text-align: center;
 }
 
 /* Calendar if needed */

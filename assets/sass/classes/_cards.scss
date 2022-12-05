@@ -13,14 +13,11 @@
   grid-column: 2/3;
 }
 
+.card,
 .card3 {
-  border-bottom: 1px solid #000;
-}
-
-.card {
   padding-left: 1rem;
   padding-bottom: 1rem;
-  border: 1px solid $deep-purple;
+  border: 1px solid $corn-orange;
 }
 .symbils::has(label) {
   display: inline;

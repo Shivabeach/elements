@@ -1,5 +1,5 @@
 /** @format */
-
+@use '../abstracts' as *;
 // Colors
 $blue: #1565c0;
 $blue-light: #3b83d5;
@@ -15,7 +15,7 @@ $viewport-background-color: #c6aaaf;
 /* From base */
 :root {
   // Typography
-  --font-family: $concert;
+  --font-family: Helvetica Neue;
   --font-family--heading: var(--font-family);
 
   --font-weight--thin: 100;

@@ -70,12 +70,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<p>Fahrenheit: <span class="form-Output" id="outputFahrenheit"></span></p>
 		</div>
 		<div class="card card2">
-			<label for="ml">Ml To Oz</label><input type="number" id="ml" class="input-med"/>
+			<label for="ml">Ml To Oz</label><input type="number" id="ml" class="input-med-lg"/>
 			<p class="showOz"> </p>
 		</div>
 		<div class="card card1">
-			<label for="ml">Liters To Ounces</label>
-			<input type="text" id="liter" class="input-date"/>
+			<label for="ml">Liters To Gallons</label>
+			<input type="text" id="liter" class="input-med"/>
 			<p id="showLit"> </p>
 		</div>
 		<div class="card card2">
