@@ -37,7 +37,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<h3>Music Stats</h3>
 				</header>
 				<!-- center section -->
-				<div id="article-container">
+				<div id="article-containers">
 					<div class="parcel">
 						<header class="music fs-3">Fav Rock Artists</header>
 						<ul>
@@ -74,6 +74,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							<li>Blood On the Tracks <u>Bob Dylan</u></li>
 							<li>Closer to Home <u>Grand Funk</u></li>
 							<li>Pampered Menial <u>Pavlovs Dog</u></li>
+							<li>Tango In the Night <u>Fleetwood Mac</u> </li>
 						</ul>
 					</div>
 					<div class="parcel">
@@ -94,6 +95,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							<li>Drivers Seat <u> Sniff n the Tears</u></li>
 							<li>Allison Road <u>Gin Blossoms</u></li>
 							<li>EveryBody Wants to Rule The World <u>Tears For Fears</u></li>
+							<li>Tango In the Night <u>Fleetwood Mac</u> </li>
+							<li>Dear Mr Fantasy <u>Traffic</u></li>
 						</ul>
 					</div>
 					<div class="parcel">

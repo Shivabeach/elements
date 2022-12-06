@@ -1,20 +1,5 @@
 /** @format */
-
 @use '../abstracts' as *;
-#prime2 {
-}
-
-#page2-container {
-	max-width: 90rem;
-	margin-inline: auto;
-	display: grid;
-	height: auto;
-	grid-column-gap: 1rem;
-	grid-row-gap: 1rem;
-	grid-template-columns: repeat(6, 1fr);
-	grid-template-rows: 0.25fr repeat(3, 1fr) 0.5fr;
-}
-
 #center-page {
 	grid-column: 2/6;
 	border: 1px solid var(--granite-green);

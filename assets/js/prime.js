@@ -1,5 +1,4 @@
 /** @format */
-'use strict';
 import { stories } from './stories.js';
 const iconSun = document.querySelector('.icon-sun');
 const iconMoon = document.querySelector('.icon-moon');

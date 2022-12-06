@@ -15,14 +15,14 @@ fieldset {
 }
 
 legend {
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: var(--spacing--small);
   padding: 0;
 }
 
 label {
   display: inline;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: var(--spacing--small);
 }
 
@@ -83,7 +83,7 @@ textarea {
 }
 
 textarea {
-  resize: vertical;
+  resize: all;
 }
 
 [type='checkbox'],
