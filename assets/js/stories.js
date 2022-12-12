@@ -1,11 +1,22 @@
 /** @format */
-'use strict';
 export const stories = [
+  {
+    title: 'Doctors Appointment',
+    story:
+      '<p>I have an Appointment on the 12/15/2022 at 1:15pm with Dr Malagon. This is where I have to admit why I had blood in the semen. And tell him how my head is doing after starting Escitalopram. I had terrible visions of falling off a silo, a remnant of my youth at Apache Ranch</p>',
+    date: '12/12/2022',
+  },
+  {
+    title: 'Finally Undefined is Gone',
+    story:
+      '<p>Thanks to LearnWebCode, I finally figured out how to get rid of the undefined at the top of the the article list and the articles themselves</p><p>There are many ways to do this, most would use fetch. But fetch seems like an awful lot of extra code to write.</p><p> The way I did it was using the map function. It simply takes the array of objects and returns a new array that can be displayed. I first used foreach(), but that left a "undefined" label above the articles and the title list </p>',
+    date: '12/11/2022',
+  },
   {
     title: 'Dreams Come True',
     date: '12/5/2022',
     story:
-      '<h3>Dreams are real</h3> <p>I finally realized my dream of having an older woman give me a rectal exam. While I didnt let her know, she was ticking up a box on the bullet list</p>',
+      '<h4>Dreams are real</h4> <p>I finally realized my dream of having an older woman give me a rectal exam. While I didnt let her know, she was ticking up a box on the bullet list</p>',
   },
   {
     title: 'Coming Home',

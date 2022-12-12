@@ -1,29 +1,40 @@
 /** @format */
+'use strict';
 import { stories } from './stories.js';
+import { log, titleCase } from './utils.js';
 const iconSun = document.querySelector('.icon-sun');
 const iconMoon = document.querySelector('.icon-moon');
-const ac = document.getElementById('article-container');
+const articleContainer = document.getElementById('article-container');
+const lengths = document.querySelector('.length');
 const titleList = document.getElementById('title-list');
-let tit, stores;
-stories.forEach((store) => {
-	stores += `
-	<article>
-		<h4>${store.title}</h4>
-		<div class="indent">${store.story}</div>
-		<div class="dates">${store.date}</div>
-	</article>
-	`;
-	ac.innerHTML = stores;
-});
 
-stories.forEach((titles) => {
-	tit += `
-		<li>${titles.title}</li>
+function display(story) {
+	return `
+		<article class="article">
+		<h4 class="center-align fs-4 padding-1">${titleCase(story.title)}</h4>
+		<div class="indent">${story.story}</div>
+		<div class="dates">Date: <span class="show-Date">${story.date}</span></div>
+		<div>
+		</article>
 	`;
-	titleList.innerHTML = tit;
-});
+}
 
-// Get first letter
-// const cars = ['BMW', 'Honda', 'Ford', 'GM'];
-// const first = cars.map((car) => car[0]);
-// console.log(first);
+function titlesList(titles) {
+	return `
+		<ul id="title-list">
+		<li>${titleCase(titles.title)}</li>
+		</ul>
+	`;
+}
+
+function titleNumber(quanity) {
+	return `${quanity.title.length}`;
+}
+
+articleContainer.innerHTML = `
+	${stories.map(display).join('')}`;
+
+titleList.innerHTML = `
+	${stories.map(titlesList).join('')}`;
+
+lengths.innerHTML = `You have <u>${stories.length}</u> articles`;

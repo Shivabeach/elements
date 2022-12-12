@@ -48,7 +48,7 @@ export const createElement = (tag, className) => {
 export const addClass = (selector, className, scope) => {
 	(scope || document).querySelector(selector).classList.add(className);
 };
-//addClass('body', 'purple');
+//addClass('body', 'classname');
 //
 export const sanitizeInput = (inputValue) => {
 	const div = document.createElement('div');
@@ -95,3 +95,12 @@ export const months2 = {
 	'11': 'Nov',
 	'12': 'Dec',
 };
+
+export function titleCase(str) {
+	var splitStr = str.toLowerCase().split(' ');
+	for (var i = 0; i < splitStr.length; i++) {
+		splitStr[i] =
+			splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);
+	}
+	return splitStr.join(' ');
+}

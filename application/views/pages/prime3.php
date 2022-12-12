@@ -28,18 +28,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<div id="left">
 				<header class="section-head">
 					<h3>Left Side</h3>
+					<p>I use Mediamonkey for the player and playlists</p>
 				</header>
 				<ul id="title-list">
 				</ul>
 			</div>
 			<section>
 				<header class="section-head">
-					<h3>Music Stats</h3>
+					<h3>Favorite Music</h3>
 				</header>
 				<!-- center section -->
 				<div id="article-containers">
 					<div class="parcel">
-						<header class="music fs-3">Fav Rock Artists</header>
+						<header class="music fs-3">Rock Artists</header>
 						<ul>
 							<li>The Beatles</li>
 							<li>The Moody Blues</li>
@@ -61,13 +62,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						</ul>
 					</div>
 					<div class="parcel">
-						<header class="music fs-3">Fav. Albums</header>
+						<header class="music fs-3">Favorite Albums</header>
 						<ul>
 							<li>A Question of Balance - <u>Moody Blues</u></li>
 							<li>In Search Of The Last Chord</li>
 							<li>On the Threshold Of A Dream</li>
 							<li>To Our Children's Children's Children</li>
-							<li>Santana 3 - <u>Santana</u></li>
+							<li>Santana 3 <u>Santana</u></li>
 							<li>Moon Flower</li>
 							<li>Welcome</li>
 							<li>Caravanserai</li>
@@ -75,10 +76,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							<li>Closer to Home <u>Grand Funk</u></li>
 							<li>Pampered Menial <u>Pavlovs Dog</u></li>
 							<li>Tango In the Night <u>Fleetwood Mac</u> </li>
+							<li>Reo Speedwagon <u> Reo Speedwagon</u></li>
+							<li>Queen <u>Queen </u></li>
+							<li>Iron Butterfly <u>Metamorphosis</u></li>
+							<li>Dragonfly <u>Jefferson Airplane</u></li>
+							<li>Electric LadyLand <u> Jimi Hendrix</u></li>
+							<li>At Filmore East <u>Allman Brothers</u></li>
+							<li>Pet Sounds <u>Beach Boys</u></li>
+							<li>Bridge Of Sighs <u>Robin Trower</u></li>
+							<li>Twice Removed From Yesterday <u>Robin Trower</u></li>
 						</ul>
 					</div>
 					<div class="parcel">
-						<header class="music fs-3">Fav. Songs</header>
+						<header class="music fs-3">Favorite Songs</header>
 						<ul>
 							<li>It's Up To You <u>The Moody Blues</u> </li>
 							<li>Like a Hurricane <u>Neil Young</u> </li>
@@ -97,10 +107,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							<li>EveryBody Wants to Rule The World <u>Tears For Fears</u></li>
 							<li>Tango In the Night <u>Fleetwood Mac</u> </li>
 							<li>Dear Mr Fantasy <u>Traffic</u></li>
+							<li>White Bird <u>It's a Beatiful Day</u></li>
+							<li>Metamorphosis <u>Iron Butterfly</u></li>
+							<li>All Along the Watchtower<u> Jimi Hendrix</u></li>
+							<li>Daydream <u>Robin Trower</u></li>
+
 						</ul>
 					</div>
 					<div class="parcel">
-						<header class="music fs-3">Fav. Ambient Artists</header>
+						<header class="music fs-3">Ambient Artists</header>
 						<ul>
 							<li>Nacho Sotomayor</li>
 							<li>Baby Mammoth</li>
@@ -115,7 +130,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						</ul>
 					</div>
 					<div class="parcel">
-						<header class="music fs-3">Fav. 60's Artists</header>
+						<header class="music fs-3">60's Artists</header>
 						<ul>
 							<li>The Beatles</li>
 							<li>Del Shannon</li>
@@ -134,7 +149,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						</ul>
 					</div>
 					<div class="parcel">
-						<header class="music fs-3">Fav. 70's Artists</header>
+						<header class="music fs-3">70's Artists</header>
 					</div>
 				</div>
 			</section>

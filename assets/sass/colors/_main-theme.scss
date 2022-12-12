@@ -5,21 +5,24 @@
 //https://www.youtube.com/watch?v=Xk12JtYG8rw
 :root[data-theme='light'] {
 	--page-bg: #d36e2d;
-	--page-color: #2d2aa4;
+	--page-article: #bf6328;
+	--page-color: #40210d;
 	--page-h3: #78421e;
 	--page-header: #659cc8;
 	--page-footer: #659cc8;
-	--page-h4: #140fa9;
-	--page-li: #095aae;
+	--page-h4: #73340d;
+	--page-li: #521b29;
 	--placeholder: #521b29;
 	--a-link: #1e2227;
 	--a-link-hover: #cc9d1f;
 	--a-visited: #fe5532;
+	--page-date: #521b29;
 }
 
 :root[data-theme='dark'] {
 	--page-bg: #080b4a;
-	--page-color: #ebf056;
+	--page-article: #3e4296;
+	--page-color: #c7c8e8;
 	--page-h3: #87bde1;
 	--page-header: #066480;
 	--page-footer: #066480;
@@ -31,6 +34,7 @@
 	--a-link-hover: #cc9d1f;
 	--a-visited: yellow;
 	--page-u: #4fc3f7;
+	--page-date: #080b4a;
 }
 
 body {
@@ -42,6 +46,7 @@ h3 {
 }
 h4 {
 	color: var(--page-h4);
+	text-shadow: 1px 2px 2px #080b4a;
 }
 .head {
 	background-color: var(--page-header);
@@ -122,4 +127,15 @@ u {
 	color: var(--page-u);
 	text-shadow: 0 0 2px $md-light-blue-800;
 	font-family: $font-stack-georgia;
+}
+.article {
+	background-color: var(--page-article);
+	margin: 0 0px 2rem 0;
+}
+
+.show-Date {
+	padding: 0.25rem;
+	border: 1px solid gray;
+	background: var(--page-date);
+	color: white;
 }

@@ -25,17 +25,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</header>
 			<div id="left">
 				<header class="section-head">
-					<h3>Left Side</h3>
+					<h3>Title List</h3>
+					<h4 class="length"></h4>
 				</header>
-				<ul id="title-list">
-				</ul>
+				<ul id="title-list"></ul>
 			</div>
 			<section>
 				<header class="section-head">
-					<h3>Section title</h3>
+					<h3>Articles</h3>
 				</header>
 				<!-- json file entered here -->
 				<div id="article-container">
+
 				</div>
 			</section>
 			<aside>
