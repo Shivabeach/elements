@@ -2,14 +2,29 @@
 @use '../abstracts' as *;
 #article-containers {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
 	grid-gap: 1rem;
 }
 
 .parcel {
-	min-height: 300px;
 	border: 1px solid $corn-orange;
 }
 .music {
 	text-align: center;
+}
+.book-title {
+	text-align: center;
+}
+.parcels {
+	@extend .parcel;
+	margin-bottom: 2rem;
+}
+.author {
+	text-align: center;
+	border-bottom: 1px solid #000;
+}
+.author,
+.book-title,
+.music {
+	background: var(--page-authors);
 }

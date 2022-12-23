@@ -7,6 +7,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<meta charset="UTF-8">
 		<title>		<?php echo $title;?>	</title>
 		<script>
+			//check local storage
 			let localS = localStorage.getItem("theme"),
 			themeToSet = localS
 			document.documentElement.setAttribute("data-theme", themeToSet)
@@ -29,6 +30,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<h4 class="length"></h4>
 				</header>
 				<ul id="title-list"></ul>
+				<label for="titleSearch">Title Search
+				<input type="text" id="titleSearch"></label>
 			</div>
 			<section>
 				<header class="section-head">
@@ -48,6 +51,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<img src="assets/images/icons8-sun-with-face-48.png" class="icon-sun">
 					<img src="assets/images/icons8-new-moon-face-48.png" class="icon-moon">
 				</div>
+				<div id="toggle">
+					<i class="indicator"></i>
+				</div>
 			</aside>
 			<footer class="footer">
 				<div class="box" id="box1">
@@ -60,7 +66,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ex nemo, distinctio eum id?</p>
 				</div>
 				<div class="box" id="box4">
-					p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, minima omnis repellendus perferendis accusantium ducimus, suscipit consequatur voluptates maiores quam!
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor, minima omnis repellendus perferendis accusantium ducimus, suscipit consequatur voluptates maiores quam!</p>
 				</div>
 				<div class="box" id="box5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, ex.</div>
 				<div class="box" id="box6">

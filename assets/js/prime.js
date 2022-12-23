@@ -11,7 +11,7 @@ const titleList = document.getElementById('title-list');
 function display(story) {
 	return `
 		<article class="article">
-		<h4 class="center-align fs-4 padding-1">${titleCase(story.title)}</h4>
+		<h4 class="titles center-align fs-4 padding-1">${titleCase(story.title)}</h4>
 		<div class="indent">${story.story}</div>
 		<div class="dates">Date: <span class="show-Date">${story.date}</span></div>
 		<div>
@@ -37,4 +37,26 @@ articleContainer.innerHTML = `
 titleList.innerHTML = `
 	${stories.map(titlesList).join('')}`;
 
-lengths.innerHTML = `You have <u>${stories.length}</u> articles`;
+lengths.innerHTML = `You have <u class="fs-4">${stories.length}</u> articles`;
+
+//https://teamtreehouse.com/library/javascript-search/javascript-search
+const article = document.querySelectorAll('.article');
+const titleSearch = document.getElementById('titleSearch');
+titleSearch.addEventListener('keyup', (e) => {
+	let currentValue = e.target.value.toLowerCase();
+	let titles = document.querySelectorAll('h4.titles');
+	titles.forEach((title) => {
+		if (title.textContent.toLowerCase().includes(currentValue)) {
+			title.parentNode.style.display = 'block';
+		} else {
+			title.parentNode.style.display = 'none';
+		}
+	});
+});
+
+const body = document.querySelector('body');
+const toggle = document.getElementById('toggle');
+toggle.addEventListener('click', () => {
+	toggle.classList.toggle('active');
+	body.classList.toggle('active');
+});

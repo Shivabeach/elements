@@ -27,11 +27,51 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</header>
 			<div id="left">
 				<header class="section-head">
-					<h3>Left Side</h3>
-					<p>I use Mediamonkey for the player and playlists</p>
+					<h3>Favorite Books</h3>
 				</header>
-				<ul id="title-list">
+				<article class="parcels">
+				<h4 class="book-title">Rama</h4>
+				<h5 class="author">Arthur C Clark</h5>
+				<ul>
+					<li>Rendezvous With Rama</li>
+					<li>Rama ll</li>
+					<li>The Garden Of Rama</li>
+					<li>Rama Revealed</li>
 				</ul>
+				</article>
+				<article class="parcels">
+				<h4 class="book-title">The Giants</h4>
+				<h5 class="author">James P. Hogan</h5>
+				<ul>
+					<li>The two Moons</li>
+					<li>The Two Worlds</li>
+					<li>Mission To Minerva</li>
+				</ul>
+			</article>
+			<article class="parcels">
+				<h4 class="book-title">Riverworld</h4>
+				<h5 class="author">Philip Jose Farmer</h5>
+				<ul>
+					<li>To Your Scattered Bodies Go</li>
+					<li>The Fabulous Riverboat</li>
+					<li>The Dark Design</li>
+					<li>The Magic Labyrinth</li>
+					<li>The Gods of Riverworld</li>
+				</ul>
+			</article>
+			<article class="parcels">
+				<h4 class="book-title">Thomas Covenant</h4>
+				<h5 class="author">Stephen Donaldson</h5>
+				<ul>
+					<li>Lord Fouls Bane</li>
+					<li>The Illearth War</li>
+					<li>The Power that Preserves</li>
+					<li>The Wounded Land</li>
+					<li>The One Tree</li>
+					<li>White Gold Wielder</li>
+				</ul>
+
+			</article>
 			</div>
 			<section>
 				<header class="section-head">
@@ -150,11 +190,57 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					</div>
 					<div class="parcel">
 						<header class="music fs-3">70's Artists</header>
+						<p>content</p>
 					</div>
 				</div>
 			</section>
-			<aside  class="aside">
-				<h3>Aside</h3>
+			<aside class="aside">
+				<header class="section-head">
+					<h3>Favorite Books</h3>
+				</header>
+				<article class="parcels">
+				<h5 class="author">Jack McDevitt</h5>
+				<ul>
+					<li>Polaris - <u>Benedict</u></li>
+					<li>Seeker - <u>Benedict</u></li>
+					<li>Firebird - <u>Benedict</u></li>
+					<li>The Devils Eye - <u>Benedict</u></li>
+					<li>Chindi - <u>Hutch</u></li>
+					<li>Deepsix - <u>Hutch</u></li>
+					<li>Omega - <u>Hutch</u></li>
+					<li>Cauldren - <u>Hutch</u></li>
+					<li>Odyssey - <u>Hutch</u></li>
+					<li>Engines Of God - <u>Hutch</u></li>
+					<li>Eternity Road</li>
+					<li>Ancient Shores</li>
+				</ul>
+				</article>
+				<article class="parcels">
+				<h4 class="book-title">Foundation</h4>
+				<h5 class="author">Isaac Asimov</h5>
+				<ul>
+					<li>Prelude to Foundation - 1988</li>
+					<li>Forward The Foundation - 1993</li>
+					<li>Foundation - 1951</li>
+					<li>Foundation & Empire - 1952</li>
+					<li>Second Foundation - 1953</li>
+					<li>Foundations Edge - 1982</li>
+					<li>Foundation & Earth - 1986</li>
+					<li></li>
+				</ul>
+				</article>
+				<article class="parcels">
+				<h4 class="book-title">Ender Wiggens</h4>
+				<h5 class="author">Orson Scott Card</h5>
+				<ul>
+					<li>Enders Game</li>
+					<li>Speaker For the Dead</li>
+					<li>Xenocide</li>
+					<li>Children of the Mind</li>
+					<li>Ender In Exile</li>
+				</ul>
+				</article>
+
 			</aside>
 			<footer class="footer">
 			<div class="box" id="box1">
@@ -167,10 +253,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</div>
 			<div class="box" id="box4"><div class="color"></div></div>
 			<div class="box" id="box5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, ex.</div>
-			<div class="box" id="box6">box6</div>
+			<div class="box" id="box6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nostrum natus, perspiciatis quis quidem sit doloremque cupiditate voluptate blanditiis, </div>
 			</footer>
-			</div>
+		</div>
 <script type="module" src="<?php echo base_url('assets/js/script.js');?>"></script>
-<!-- <script type="module" src="<?php echo base_url('assets/js/prime-dist.js');?>"></script> -->
 </body>
 </html>

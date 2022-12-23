@@ -27,6 +27,7 @@ button,
   white-space: nowrap;
 
   &:hover {
+    @include simple-grad(#00ffff, yellow);
     background-color: $action-color--alt;
   }
 

@@ -12,7 +12,7 @@
 	{
 		"title": "Boing",
 		"date": "11/23/2022",
-		"story": "<p>Well, the fix didnt last. In trying to restore the computer to a previous date, Kaspersky refusesd to let it happen. Something got corrupted, and DISM nor Filechecker couldnt fix it. It ended up that windows would not boot up at all.</p><p>Fortunately I had cloned the drive onlo another M2 SSD, and was able to go back to that. Very painful</p>"
+		"story": "<p>Well, the fix didnt last. In trying to restore the computer to a previous date, Kaspersky refusesd to let it happen. Something got corrupted, and neither DISM nor Filechecker could fix it. It ended up that windows would not boot up at all.</p><p>Fortunately I had cloned the drive onlo another M2 SSD, and was able to go back to that. Very painful</p>"
 	},
 	{
 		"title": "Today",

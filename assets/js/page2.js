@@ -32,6 +32,7 @@ const reset = document.getElementById('reset1');
 const materialAmount = document.getElementById('materialAmount');
 const dilutionAmount = document.getElementById('dilutionAmount');
 
+const tnTax = document.querySelector('.tnTax');
 const taxed = document.getElementById('taxed');
 const fullPrice = document.getElementById('fullPrice');
 const partialTotal = document.getElementById('partialTotal');
@@ -128,9 +129,10 @@ function clear() {
 }
 
 function taxable() {
+  const taxTn = tnTax.value;
   const tax = taxed.value;
-  const tennTax = 0.07;
-  const taxInput = tax * tennTax; // right
+  //const tennTax = 0.07;
+  const taxInput = tax * taxTn; // right
   partialTotal.innerHTML = `$${taxInput}`;
   fullTax(taxInput);
 }

@@ -64,9 +64,23 @@ addEventListener('DOMContentLoaded', () => {
 	getStore();
 });
 
+function seeStories(values) {
+	return `
+		<article class="article">
+		<h4 class="titles center-align fs-4 padding-1">${values.title}</h4>
+		<div class="indent">${values.story}</div>
+		<div class="dates">Date: <span class="show-Date">${values.date}</span></div>
+		</article>
+	`;
+}
+
+let theTitle, theDate, theStory;
+
 fetch('http://localhost/elements/assets/js/data.json')
 	.then((resp) => resp.json())
-	.then((json) => {
-		//console.log(json.likes[1]);
-		//do what will be done here. Display it, use foreach ect
+	.then((data) => {
+		theTitle = data.title;
+		theDate = data.date;
+		theStory = data.story;
+		console.log(data);
 	});

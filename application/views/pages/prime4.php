@@ -42,6 +42,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<button class="record">Enter Record</button>
 					</form>
 				</p>
+				<article id="see"></article>
 				<!-- End aside -->
 			</aside>
 			<section id="center-pages">
@@ -80,7 +81,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 				</table>
 			</article>
-			<article id="see"></article>
+
 		</section>
 		<footer class="footer">
 			<div class="box" id="box1">

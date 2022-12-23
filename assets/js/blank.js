@@ -99,3 +99,9 @@ fetch(data.json)
 		console.log(json.users.name);
 		//do what will be done here. Display it, use foreach ect
 	});
+//https://teamtreehouse.com/library/javascript-search/javascript-search
+//requires keyframes. Refer to video
+article.forEach((card) => {
+	let randomAniDelay = Math.floor(Math.random() * 500);
+	card.style.amimation = `fadeIn 1s .${randomAniDelay} ease forwards`;
+});

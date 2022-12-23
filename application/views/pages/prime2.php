@@ -78,12 +78,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<input type="text" id="liter" class="input-med"/>
 			<p id="showLit"> </p>
 		</div>
+
+
 		<div class="card card2">
 			<h6>Tennessee tax = .07</h6>
+			<input type="number" class="tnTax input-med-lg" placeholder="Preferred Tax">
 			<input type="number" class="input-med-lg" id="taxed" placeholder="Purchase amount">
 			<p>Tax: <span id="partialTotal"></span>  </p>
 			<p>Amount with tax: <span id="fullPrice"></span>    </p>
 		</div>
+
+
 		<div class="card card1">
 			<label for="cm">Centimeters to Inches</label>
 			Centimeters: <input type="text" id="cm" class="input-med-lg"/>

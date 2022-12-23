@@ -6,7 +6,7 @@
 #prime-container,
 #page2-container,
 #prime3-container {
-  max-width: 95rem;
+  max-width: 100rem;
   margin-inline: auto;
   display: grid;
   min-height: 100vh;
@@ -24,7 +24,6 @@ header.head {
   @include borders(1px, solid, $muted-clay);
 }
 #left {
-  padding: 0.5rem;
   grid-column: 1 / 2;
   grid-row: 2/5;
   //@include borders(1px, solid, $elderberry);
@@ -45,7 +44,6 @@ section {
   }
 }
 aside {
-  padding: 0.5rem;
   grid-column: 6 / 7;
   grid-row: 2/5;
   //@include borders(1px, solid, $elderberry);

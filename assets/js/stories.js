@@ -1,6 +1,12 @@
 /** @format */
 export const stories = [
   {
+    title: 'breaking newz',
+    date: '12/23/2022',
+    story:
+      '<h4>Massive Storm hits US</h4><p>Across the US, temperatures are dropping well below freezing. Yesterday our temperatures were in the mid 40s, this morning it was down to 9 desgrees.</p><p>The temperatures are not projected to be back up in the 40s and 50s until next Friday</p><p>Bye the way. Global climate change must be a lie, right?</p>',
+  },
+  {
     title: 'Doctors Appointment',
     story:
       '<p>I have an Appointment on the 12/15/2022 at 1:15pm with Dr Malagon. This is where I have to admit why I had blood in the semen. And tell him how my head is doing after starting Escitalopram. I had terrible visions of falling off a silo, a remnant of my youth at Apache Ranch</p>',
@@ -35,11 +41,5 @@ export const stories = [
     story:
       '<p>Today the wamp server quit working. I left a message at the <a title="Wamp" href="http://forum.wampserver.com/list.php?2">Wamp forums </a> but as of today there is no response</p><p>It appears that one cannot write a story in the way one things they should</p><p>I am hoping this will be fixed soon. I must consider moving to non-database sights</p><p>This was resolved by upgrading to a new version of MySQL and putting in the old sql backups</p>',
     date: '11/21/2022',
-  },
-  {
-    title: 'Eating Habits',
-    story:
-      '<p>Stop eating just to eat. Stop eating garbage <br> No Cookies</p>',
-    date: '6/1/2022',
   },
 ];
