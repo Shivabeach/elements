@@ -1,6 +1,12 @@
 /** @format */
 export const stories = [
   {
+    title: '2022 Summary',
+    date: '1/1/2023',
+    story:
+      '<p>This year I walked <strong>558</strong> miles </p><p>I took <strong>1,277,109</strong> steps</p><p>I burned <strong>853,435</strong> calories</p><p>I was positive <strong>56%</strong> of the time</p><p>I only exercised <strong>2%</strong> of the year</p>',
+  },
+  {
     title: 'breaking newz',
     date: '12/23/2022',
     story:

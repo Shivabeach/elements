@@ -160,8 +160,7 @@ button,
 [type=button],
 [type=reset],
 [type=submit] {
-  -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
   border: 0;
   border-radius: var(--border-radius);
   color: rgb(198, 170, 175);
@@ -176,8 +175,7 @@ button,
   text-align: center;
   text-decoration: none;
   transition: background-color var(--duration) var(--timing);
-  -webkit-user-select: none;
-          user-select: none;
+  user-select: none;
   vertical-align: middle;
   white-space: nowrap;
 }
@@ -252,8 +250,7 @@ textarea {
 [type=week],
 input:not([type]),
 textarea {
-  -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
   background-color: transparent;
   border: var(--border);
   border-radius: var(--border-radius);
@@ -826,6 +823,19 @@ th {
   padding: 0 3rem 1rem 0;
 }
 
+.add,
+.subtract,
+.multiply,
+.divide {
+  padding-left: 0.75rem;
+  text-decoration: underline;
+  font-size: 1.2rem;
+}
+
+.dis {
+  text-align: center;
+}
+
 /** @format */
 /* main theme colors */
 :root[data-theme=light] {
@@ -843,6 +853,7 @@ th {
   --a-visited: #4d5e73;
   --page-date: #521b29;
   --page-authors: #e0e0e0;
+  --calendar: hsl(336, 86%, 24%);
 }
 
 :root[data-theme=dark] {
@@ -861,6 +872,7 @@ th {
   --a-visited: yellow;
   --page-u: #4fc3f7;
   --page-date: #080b4a;
+  --calendar: #d3927d;
 }
 
 body {
@@ -1010,6 +1022,10 @@ u {
     transform: translateX(0px);
   }
 }
+.color {
+  color: var(--calendar);
+}
+
 /** @format */
 .dark {
   background-color: #521B29;
@@ -1305,4 +1321,5 @@ th {
 }
 
 /** @format */
+
 /*# sourceMappingURL=main.css.map */

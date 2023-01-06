@@ -35,13 +35,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<button id="budget">Enter Budget</button>
 					</form>
 				</p>
-				<p>
-					<form action="">
-						<input type="text" class="amount" placeholder="amount"><br>
-						<input type="text" class="reason" placeholder="reason"><br>
-						<button class="record">Enter Record</button>
-					</form>
-				</p>
+
 				<article id="see"></article>
 				<!-- End aside -->
 			</aside>
@@ -60,11 +54,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 						<tr>
 							<td id="budgetAmount"></td>
-							<td id="totalLiabilities">1</td>
-							<td id="cashOnHand">1</td>
+							<td id="totalLiabilities"></td>
+							<td id="cashOnHand"></td>
 						</tr>
-
 					</table>
+					<!-- <button class="calculate">Calculate</button> -->
 				</article>
 				<!-- Start section 2 Add in boxes or cards -->
 				<article class="two2">
@@ -75,9 +69,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<tr>
 							<th>Reason</th>
 							<th>Cost</th>
+							<th>Date</th>
 						</tr>
+						<tbody class="out-flow">
+							<!-- From money.ja -->
 
-						<tr class="app"></tr>
+
+						</tbody>
+
 
 				</table>
 			</article>
@@ -97,10 +96,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<div class="color"></div>
 			</div>
 			<div class="box" id="box5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, ex.</div>
-			<!-- <div class="box" id="box6">box6</div> -->
+			<div class="box" id="box6">box6</div>
 		</footer>
 	</div>
 	<script type="module" src="<?php echo base_url('assets/js/script-dist.js');?>"></script>
-	<script type="module" src="<?php echo base_url('assets/js/money-dist.js');?>"></script>
+	<script type="module" src="<?php echo base_url('assets/js/money.js');?>"></script>
 </body>
 </html>

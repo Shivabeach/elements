@@ -18,6 +18,7 @@
 	--a-visited: #4d5e73;
 	--page-date: #521b29;
 	--page-authors: #e0e0e0;
+	--calendar: hsl(336, 86%, 24%);
 }
 
 :root[data-theme='dark'] {
@@ -36,6 +37,7 @@
 	--a-visited: yellow;
 	--page-u: #4fc3f7;
 	--page-date: #080b4a;
+	--calendar: #d3927d;
 }
 
 body {
@@ -181,4 +183,7 @@ u {
 		opacity: 1;
 		transform: translateX(0px);
 	}
+}
+.color {
+	color: var(--calendar);
 }

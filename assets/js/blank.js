@@ -105,3 +105,28 @@ article.forEach((card) => {
 	let randomAniDelay = Math.floor(Math.random() * 500);
 	card.style.amimation = `fadeIn 1s .${randomAniDelay} ease forwards`;
 });
+
+// function seeStories(values) {
+// 	return `
+// 		<article class="article">
+// 		<h4 class="titles center-align fs-4 padding-1">${values.title}</h4>
+// 		<div class="indent">${values.story}</div>
+// 		<div class="dates">Date: <span class="show-Date">${values.date}</span></div>
+// 		</article>
+// 	`;
+// }
+
+// fetch('http://localhost/elements/assets/js/data.json')
+// 	.then((resp) => resp.json())
+// 	.then((data) => {
+// 		//foreach here
+// 		data.forEach((datas) => {
+// 			see.innerHTML += `
+// 				<article class="article">
+// 					<h4 class="titles center-align fs-4 padding-1">${datas.title}</h4>
+// 					<div class="indent">${datas.story}</div>
+// 					<div class="dates">Date: <span class="show-Date">${datas.date}</span></div>
+// 				</article>
+// 			`;
+// 		});
+// 	});
