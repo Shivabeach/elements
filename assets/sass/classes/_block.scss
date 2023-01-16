@@ -1,0 +1,18 @@
+/** @format */
+
+@use '../abstracts' as *
+
+//Soft stuff. Change colors to suit https://neumorphism.io/#e0e0e0
+
+.shadow {
+	border-radius: 70px;
+	background: #e0e0e0;
+	box-shadow: -7px 7px 6px #bebebe, 7px -7px 6px #ffffff;
+}
+
+//for buttons
+
+// border-radius: 50px;
+// background: #ff8040;
+// box-shadow: inset -22px -22px 44px #d96d36,
+//             inset 22px 22px 44px #ff934a;

@@ -142,50 +142,28 @@ mods.reset.addEventListener('click', () => {
   clear();
 });
 
-ml.addEventListener('keyup', mlToOz);
-liter.addEventListener('keyup', ltToGal);
+//ml.addEventListener('keyup', mlToOz);
+listen(ml, 'keyup', mlToOz);
+//liter.addEventListener('keyup', ltToGal);
+listen(liter, 'keyup', ltToGal);
 
-inputCelsius.addEventListener('keyup', () => {
-  temperatureConverter();
-});
+inputCelsius.addEventListener('keyup', temperatureConverter);
 
-inputgrams.addEventListener('keyup', () => {
-  gramsConverter();
-});
+inputgrams.addEventListener('keyup', gramsConverter);
 
-inputMeters.addEventListener('keyup', () => {
-  meterConverter();
-});
+inputMeters.addEventListener('keyup', meterConverter);
 
-milesToKilo.addEventListener('keyup', (e) => {
-  convertsMToK();
-});
-kiloToMiles.addEventListener('keyup', (e) => {
-  convertKToM();
-});
+milesToKilo.addEventListener('keyup', convertsMToK);
+kiloToMiles.addEventListener('keyup', convertKToM);
 mods.click.addEventListener('click', (e) => {
   e.preventDefault();
   calculate();
 });
-taxed.addEventListener('keyup', (e) => {
-  taxable();
-});
-cm.addEventListener('keyup', () => {
-  cmToIn();
-});
-mods.knot.addEventListener('keyup', () => {
-  knotToMph();
-});
+taxed.addEventListener('keyup', taxable);
+cm.addEventListener('keyup', cmToIn);
+mods.knot.addEventListener('keyup', knotToMph);
 
-mods.a2.addEventListener('keyup', () => {
-  addition();
-});
-mods.a4.addEventListener('keyup', () => {
-  subtraction();
-});
-mods.a6.addEventListener('keyup', () => {
-  multiplied();
-});
-mods.a8.addEventListener('keyup', () => {
-  divided();
-});
+mods.a2.addEventListener('keyup', addition);
+mods.a4.addEventListener('keyup', subtraction);
+mods.a6.addEventListener('keyup', multiplied);
+mods.a8.addEventListener('keyup', divided);

@@ -28,15 +28,23 @@ for (let i = 0; i < document.links.length; i++) {
   }
 }
 
-function returnDate() {
-  const date = new Date();
-  const day = date.getDate();
-  const month = date.getMonth() + 1;
-  const year = date.getFullYear();
-  datey.style.color = '#4b0082';
-  datey.innerHTML = `Today is ${month} / ${day} / ${year}`;
-}
-returnDate();
+// function returnDate() {
+//   const date = new Date();
+//   const day = date.getDate();
+//   const month = date.getMonth() + 1;
+//   const year = date.getFullYear();
+//   datey.style.color = '#4b0082';
+//   datey.innerHTML = `Today is ${month} / ${day} / ${year}`;
+// }
+// returnDate();
+
+const today = new Date();
+const f = new Intl.DateTimeFormat('en-us', {
+  dateStyle: 'full',
+  //timeStyle: 'full',
+});
+// datey.style.color = '#4b0082';
+datey.innerHTML = f.format(today);
 
 const yer = new Date();
 copyr.innerHTML = `Elements \u00A92019 - ${yer.getFullYear()}`; // copywright
@@ -44,6 +52,7 @@ copyr.innerHTML = `Elements \u00A92019 - ${yer.getFullYear()}`; // copywright
 //
 // Envato https://www.youtube.com/watch?v=Xk12JtYG8rw&t=2035s
 //--------------------------------------------------------------------------
+let indicator = document.querySelector('.indicator');
 const switchTheme = () => {
   //body tag
   const rootElem = document.documentElement;
@@ -58,10 +67,8 @@ const switchTheme = () => {
   localStorage.setItem('theme', newTheme);
 };
 
-if (document.querySelector('#theme-switcher')) {
-  document
-    .querySelector('#theme-switcher')
-    .addEventListener('click', switchTheme);
+if (document.querySelector('#toggle')) {
+  document.querySelector('#toggle').addEventListener('click', switchTheme);
 }
 
 // for (let i = 0; i < document.links.length; i++) {

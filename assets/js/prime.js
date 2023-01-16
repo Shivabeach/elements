@@ -1,12 +1,12 @@
 /** @format */
 'use strict';
 import { stories } from './stories.js';
-import { log, titleCase } from './utils.js';
+import { log, titleCase, select } from './utils.js';
 const iconSun = document.querySelector('.icon-sun');
 const iconMoon = document.querySelector('.icon-moon');
-const articleContainer = document.getElementById('article-container');
-const lengths = document.querySelector('.length');
-const titleList = document.getElementById('title-list');
+const articleContainer = select('#article-container');
+const lengths = select('.length');
+const titleList = select('#title-list');
 
 function display(story) {
 	return `
@@ -41,7 +41,7 @@ lengths.innerHTML = `You have <u class="fs-4">${stories.length}</u> articles`;
 
 //https://teamtreehouse.com/library/javascript-search/javascript-search
 const article = document.querySelectorAll('.article');
-const titleSearch = document.getElementById('titleSearch');
+const titleSearch = select('#titleSearch');
 titleSearch.addEventListener('keyup', (e) => {
 	let currentValue = e.target.value.toLowerCase();
 	let titles = document.querySelectorAll('h4.titles');
