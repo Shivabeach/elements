@@ -14,7 +14,7 @@ class Pages extends CI_Controller {
 	public function page2()
 	{
 		$data["title"] = "Second Prime";
-		$data["header"] = "Page Two";
+		$data["header"] = "Conversions";
 		$this->load->view("pages/prime2", $data);
 	}
 

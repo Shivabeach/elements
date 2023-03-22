@@ -864,6 +864,17 @@ th {
 }
 
 /** @format */
+.shadow {
+  border-radius: 70px;
+  background: #e0e0e0;
+  box-shadow: -7px 7px 6px #bebebe, 7px -7px 6px #ffffff;
+}
+
+.trial:before {
+  content: ujhib89;
+}
+
+/** @format */
 /* main theme colors */
 :root[data-theme=light] {
   --page-bg: #fffaf0;

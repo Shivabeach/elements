@@ -47,10 +47,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<h3>Aside</h3>
 				</header>
 				<p>This page is using a color switcher</p>
-				<div id="theme-switcher">
+				<!-- <div id="theme-switcher">
 					<img src="assets/images/icons8-sun-with-face-48.png" class="icon-sun">
 					<img src="assets/images/icons8-new-moon-face-48.png" class="icon-moon">
-				</div>
+				</div> -->
 				<div id="toggle">
 					<i class="indicator"></i>
 				</div>

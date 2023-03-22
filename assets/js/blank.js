@@ -5,7 +5,7 @@ const colors = ['green', '', '', 'blue', 'white', ''];
 const unique = Array.from(new Set(colors));
 console.log(unique);
 
-const random = (max = 1000) => {
+const random = (max = 100) => {
 	return Math.floor(Math.random() * max);
 };
 const theArray = [
@@ -28,9 +28,9 @@ const theArray = [
 // DOM Elements
 const studentForm = document.getElementById('studentForm');
 const studentsContainer = document.querySelector('.students');
-const nameInput = studentForm.name;
-const ageInput = studentForm.age;
-const rollInput = studentForm.roll;
+const nameInput = studentForm['name'];
+const ageInput = studentForm['age'];
+const rollInput = studentForm['roll'];
 const students = [];
 /*
 {
@@ -85,13 +85,12 @@ studentForm.onsubmit = (e) => {
 		ageInput.value,
 		rollInput.value
 	);
-
-	createStudentElement(newStudent);
-
-	nameInput.value = '';
-	ageInput.value = '';
-	rollInput.value = '';
 };
+createStudentElement(newStudent);
+nameInput.value = '';
+ageInput.value = '';
+rollInput.value = '';
+
 //https://jsonplaceholder.typicode.com/
 fetch(data.json)
 	.then((resp) => resp.json())

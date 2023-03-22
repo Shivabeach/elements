@@ -70,6 +70,14 @@ const switchTheme = () => {
 if (document.querySelector('#toggle')) {
   document.querySelector('#toggle').addEventListener('click', switchTheme);
 }
+// const todos = async () => {
+//   const response = await fetch('http://localhost/elements/assets/js/data.json');
+//   const data = await response.json();
+//   return data;
+// };
+// todos().then((data) => console.log(('resolved', data)));
+
+//do what will be done here. Display it, use foreach ect
 
 // for (let i = 0; i < document.links.length; i++) {
 //   // this highlights the current active link

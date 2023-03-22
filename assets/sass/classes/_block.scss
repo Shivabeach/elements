@@ -1,7 +1,6 @@
 /** @format */
 
-@use '../abstracts' as *
-
+@use '../abstracts' as *;
 //Soft stuff. Change colors to suit https://neumorphism.io/#e0e0e0
 
 .shadow {
@@ -16,3 +15,7 @@
 // background: #ff8040;
 // box-shadow: inset -22px -22px 44px #d96d36,
 //             inset 22px 22px 44px #ff934a;
+
+.trial:before {
+	content: $unique1;
+}

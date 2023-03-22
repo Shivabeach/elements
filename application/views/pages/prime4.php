@@ -71,13 +71,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							<th>Cost</th>
 							<th>Date</th>
 						</tr>
-						<tbody class="out-flow">
-							<!-- From money.ja -->
-
-
-						</tbody>
-
-
+						<tbody class="out-flow"> <!-- From money.ja -->	</tbody>
 				</table>
 			</article>
 
@@ -99,7 +93,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<div class="box" id="box6">box6</div>
 		</footer>
 	</div>
-	<script type="module" src="<?php echo base_url('assets/js/script-dist.js');?>"></script>
 	<script type="module" src="<?php echo base_url('assets/js/money.js');?>"></script>
+	<script type="module" src="<?php echo base_url('assets/js/script-dist.js');?>"></script>
+
 </body>
 </html>
