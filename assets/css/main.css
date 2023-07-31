@@ -187,7 +187,8 @@ button,
 [type=button],
 [type=reset],
 [type=submit] {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   border: 0;
   border-radius: var(--border-radius);
   color: rgb(198, 170, 175);
@@ -202,7 +203,8 @@ button,
   text-align: center;
   text-decoration: none;
   transition: background-color var(--duration) var(--timing);
-  user-select: none;
+  -webkit-user-select: none;
+          user-select: none;
   vertical-align: middle;
   white-space: nowrap;
 }
@@ -277,7 +279,8 @@ textarea {
 [type=week],
 input:not([type]),
 textarea {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   background-color: transparent;
   border: var(--border);
   border-radius: var(--border-radius);
@@ -871,7 +874,7 @@ th {
 }
 
 .trial:before {
-  content: ujhib89;
+  content: uspn7gm;
 }
 
 /** @format */
@@ -1359,5 +1362,4 @@ th {
 }
 
 /** @format */
-
 /*# sourceMappingURL=main.css.map */

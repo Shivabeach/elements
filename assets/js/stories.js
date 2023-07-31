@@ -1,6 +1,12 @@
 /** @format */
 export const stories = [
   {
+    title: 'Kim And lisbon',
+    date: '3/23/2023',
+    story:
+      '<p>This morning I took Kim to the airport </p><p>She, Kathy and Angy are all going to Lison Portugal for a week or so.</p>',
+  },
+  {
     title: '2022 Summary',
     date: '1/1/2023',
     story:
