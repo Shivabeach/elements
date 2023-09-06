@@ -83,7 +83,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</div>
 			<section>
 				<header class="section-head">
-					<h3>Favorite Music</h3>
+					<h1>Favorite Music</h1>
 				</header>
 				<!-- center section -->
 				<div id="article-containers">
@@ -107,6 +107,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<li>The Guess Who</li>
 						<li>The Who</li>
 						<li>Robin Trower</li>
+						<li>Steely Dan</li>
 					</ul>
 				</div>
 				<div class="parcel">
@@ -133,6 +134,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<li>Pet Sounds <u>Beach Boys</u></li>
 					<li>Bridge Of Sighs <u>Robin Trower</u></li>
 					<li>Twice Removed From Yesterday <u>Robin Trower</u></li>
+					<li>Can't Buy A Thrill <u>Steely Dan</u></li>
 				</ul>
 			</div>
 			<div class="parcel">
@@ -159,6 +161,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<li>Metamorphosis <u>Iron Butterfly</u></li>
 				<li>All Along the Watchtower<u> Jimi Hendrix</u></li>
 				<li>Daydream <u>Robin Trower</u></li>
+				<li>Midnight Cruiser <u>Steely Dan</u></li>
 			</ul>
 		</div>
 		<div class="parcel">

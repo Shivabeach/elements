@@ -132,9 +132,9 @@ function multiplied() {
 }
 
 function divided() {
-  let added = parseFloat(mods.a7.value);
-  let added2 = parseFloat(mods.a8.value);
-  let sum = added / added2.toFixed(3);
+  const added = parseFloat(mods.a7.value);
+  const added2 = parseFloat(mods.a8.value);
+  let sum = added / added2.toFixed(2);
   mods.divide.innerHTML = sum || 0;
 }
 

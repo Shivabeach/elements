@@ -188,3 +188,9 @@ u {
 .color {
 	color: var(--calendar);
 }
+
+.section-head {
+	color: transparent;
+	background-image: url("../images/Untitled.jpg");
+	background-clip: text;
+}

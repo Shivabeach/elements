@@ -515,7 +515,7 @@ button {
   border-radius: 5px;
 }
 button:hover {
-  background: hsl(180deg, 79.19%, 66.08%);
+  background: hsl(180, 79.19%, 66.08%);
   color: #36013f;
   box-shadow: 2px 2px 2px #7073e2;
 }
@@ -750,7 +750,7 @@ th {
 .card3 {
   padding-left: 1rem;
   padding-bottom: 1rem;
-  border: 1px solid hsl(22deg, 95%, 42%);
+  border: 1px solid hsl(22, 95%, 42%);
 }
 
 .symbils::has(label) {
@@ -802,7 +802,7 @@ th {
 }
 
 .white {
-  color: hsl(286deg, 96%, 98%);
+  color: hsl(286, 96%, 98%);
 }
 
 .title {
@@ -871,7 +871,7 @@ th {
 }
 
 .trial:before {
-  content: ujhib89;
+  content: utt90ig;
 }
 
 /** @format */
@@ -1064,6 +1064,12 @@ u {
   color: var(--calendar);
 }
 
+.section-head {
+  color: transparent;
+  background-image: url("../images/Untitled.jpg");
+  background-clip: text;
+}
+
 /** @format */
 .dark {
   background-color: #521B29;
@@ -1179,7 +1185,7 @@ footer #box6 {
 
 /** @format */
 #center-page {
-  grid-column: 2/6;
+  grid-column: 1/7;
   border: 1px solid var(--granite-green);
   padding: 0;
   margin: 0;
@@ -1282,7 +1288,7 @@ header.heads {
 }
 
 .parcel, .parcels {
-  border: 1px solid hsl(22deg, 95%, 42%);
+  border: 1px solid hsl(22, 95%, 42%);
 }
 
 .music {

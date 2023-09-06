@@ -23,9 +23,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<span class="title"><?php echo $header;?></span>
 				<?php $this->load->view("menu/menu");?>
 			</header>
+<!--
 			<aside id="left">
 				<p>Lorem ipsum dolor sit amet consectetur</p>
 			</aside>
+-->
 			<section id="center-page">
 				<!-- Start column 1 Add in boxes or cards  -->
 				<article class="one">
@@ -119,16 +121,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<div class="card3 bottom">
 			<h3>Mathematics</h3>
 			<div class="symbils">
-					<p><input placeholder="add" type="number" class="a1 input-med"> +	<input type="number" class="a2 input-med"> <br>
-						<span class="add"> </span> </p>
+					<p><input placeholder="add" type="number" class="a1 input-med"> +	<input type="number" class="a2 input-med"><span class="add"> </span> </p>
 					<p><input placeholder="subtract" type="number" class="a3 input-med"> -
-						<input type="number" class="a4 input-med"><br>
+						<input type="number" class="a4 input-med">
 					<span class="subtract"> </span></p>
 					<p><input placeholder="multiply" type="number" class="a5 input-med"> *
-						<input type="number" class="a6 input-med"><br>
+						<input type="number" class="a6 input-med">
 					<span class="multiply"> </span></p>
 					<p><input placeholder="divide" type="number" class="a7 input-med"> /
-						<input type="number" class="a8 input-med"><br>
+						<input type="number" class="a8 input-med">
 					<span class="divide"> </span></p>
 			</div>
 		</div>
@@ -139,9 +140,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</div>
 	</article>
 </section>
+<!--
 <aside id="right">Right
 	<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed non sapiente quos qui placeat ullam dolorem consequuntur incidunt. Necessitatibus, fugit.</p>
 </aside>
+-->
 <footer class="footers">
 	<div class="box" id="box1">
 		<div id="datey"></div>
