@@ -76,8 +76,8 @@ function cmToIn() {
         event.preventDefault();
         const dilute = ounces / ratio;
         const amount = ounces - dilute;
-        mods.materialAmount.innerText = Math.round(dilute) + ' Ounces';
-        mods.dilutionAmount.innerText = Math.round(amount) + ' Ounces';
+        mods.materialAmount.innerText = dilute.toFixed(2) + ' Ounces';
+        mods.dilutionAmount.innerText = amount.toFixed(2) + ' Ounces';
       }
     });
   }
