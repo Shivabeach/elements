@@ -18,7 +18,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
 		<script>let FF_FOUC_FIX;</script>
 	</head>
-	<body id="prime">
+	<body id="prime"> 
 		<div id="prime-container">
 			<header class="head">
 				<span class="title"><?php echo $header;?></span>

@@ -18,7 +18,7 @@ function display(story) {
 		</article>
 	`;
 }
-
+ 
 function titlesList(titles) {
 	return `
 		<ul id="title-list">
