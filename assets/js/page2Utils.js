@@ -28,6 +28,7 @@ export const inputMeters = document.getElementById('inputMeters');
 export const showLit = document.getElementById('showLit');
 export const liter = document.getElementById('liter');
 export const showOz = document.querySelector('.showOz');
+export const pints = document.querySelector('.pints');
 export const ml = document.getElementById('ml');
 export const reset = document.getElementById('reset1');
 

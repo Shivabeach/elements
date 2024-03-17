@@ -75,6 +75,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<label for="ml">Ml To Oz</label>
 			<input type="number" id="ml" class="input-med-lg"/>
 			<p class="showOz"> </p>
+			<p class="pints"></p>
 		</div>
 		<div class="card card1">
 			<label for="ml">Liters To Gallons</label>
