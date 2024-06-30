@@ -21,7 +21,7 @@ const stores = JSON.parse(localStorage.getItem('storage'));
 
 function getStore() {
 	storage = JSON.parse(localStorage.getItem('storage')) || [];
-	budgetAmount.innerText = `${storage}`;
+	budgetAmount.textContent = `${storage}`;
 }
 //TODO make this function so it adds numbers entered to the storage number. The + makes a string a number
 function saveBudget(value) {
@@ -58,8 +58,8 @@ function sum() {
 }
 function totalAmountLeft() {
 	const totalLiabilitie = parseFloat(totalLiabilities.firstChild.nodeValue);
-	const budget = budgetAmount.firstChild.nodeValue;
-	const allOfIt = (budget - totalLiabilitie).toFixed(2);
+	const budget = budgetAmount.textContent;
+	const allOfIt = (+budget - +totalLiabilitie).toFixed(2);
 	cashOnHand.innerText = `$${allOfIt}`;
 }
 
