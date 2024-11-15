@@ -1,4 +1,8 @@
 /** @format */
+/** @format */
+/** @format 
+* config
+*/
 :root {
   --yellow-hue: 60;
   --green-hue: 120;
@@ -38,6 +42,7 @@
     transform: scale(1) rotateZ(360deg);
   }
 }
+/** @format */
 /**
  *  This is the reset page
  *
@@ -154,7 +159,9 @@ picture {
   display: block;
 }
 
-/** @format */ /** @format */
+/** @format */
+/** @format */
+/** @format */
 /* From base */
 :root {
   --font-family: Helvetica Neue;
@@ -183,12 +190,13 @@ picture {
 }
 
 /** @format */
+/** @format */
+/** @format */
 button,
 [type=button],
 [type=reset],
 [type=submit] {
-  -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
   border: 0;
   border-radius: var(--border-radius);
   color: rgb(198, 170, 175);
@@ -230,6 +238,8 @@ button:disabled,
   opacity: 0.5;
 }
 
+/** @format */
+/** @format */
 /** @format */
 :root {
   --form-box-shadow: inset 0 --border-width 0.1875rem rgba(#000, 0.06);
@@ -279,8 +289,7 @@ textarea {
 [type=week],
 input:not([type]),
 textarea {
-  -webkit-appearance: none;
-          appearance: none;
+  appearance: none;
   background-color: transparent;
   border: var(--border);
   border-radius: var(--border-radius);
@@ -401,6 +410,7 @@ select:focus {
 }
 
 /** @format */
+/** @format */
 html {
   color: #0f060d;
   font-family: arial;
@@ -447,6 +457,7 @@ p {
     scrollbar-width: auto;
   }
 }
+/** @format */
 /* Elements */
 p {
   margin-top: 0.75rem;
@@ -458,11 +469,13 @@ blockquote {
   padding-left: 1rem;
 }
 
+/** @format */
 /* Links */
 header a:link {
   padding: 5px 8px;
 }
 
+/** @format */
 /* typography */
 h1,
 h2 {
@@ -509,6 +522,7 @@ h6 {
   margin-bottom: 0.75rem;
 }
 
+/** @format */
 button {
   font-family: "Consolas", "monaco", monospace;
   font-size: 18px;
@@ -518,7 +532,7 @@ button {
   border-radius: 5px;
 }
 button:hover {
-  background: hsl(180deg, 79.19%, 66.08%);
+  background: hsl(180, 79.19%, 66.08%);
   color: #36013f;
   box-shadow: 2px 2px 2px #7073e2;
 }
@@ -539,6 +553,7 @@ input[type=checkbox]:checked {
   background-color: green;
 }
 
+/** @format */
 .input-small {
   width: 10%;
 }
@@ -720,12 +735,14 @@ input[type=checkbox]:checked {
 }
 
 /** @format */
+/** @format */
 th {
   padding: 0 1rem 0 1rem;
   text-align: center;
   color: #6724e1;
 }
 
+/** @format */
 /*list properties */
 .item {
   padding-right: 1rem;
@@ -736,6 +753,7 @@ th {
   display: inline;
 }
 
+/** @format */
 /**
  * /*Cards
  *
@@ -753,13 +771,14 @@ th {
 .card3 {
   padding-left: 1rem;
   padding-bottom: 1rem;
-  border: 1px solid hsl(22deg, 95%, 42%);
+  border: 1px solid hsl(22, 95%, 42%);
 }
 
 .symbils::has(label) {
   display: inline;
 }
 
+/** @format */
 /*Common*/
 .underline {
   border-bottom: 1px solid #000;
@@ -805,7 +824,7 @@ th {
 }
 
 .white {
-  color: hsl(286deg, 96%, 98%);
+  color: hsl(286, 96%, 98%);
 }
 
 .title {
@@ -867,6 +886,7 @@ th {
 }
 
 /** @format */
+/** @format */
 .shadow {
   border-radius: 70px;
   background: #e0e0e0;
@@ -874,9 +894,10 @@ th {
 }
 
 .trial:before {
-  content: uspn7gm;
+  content: ui4bv6o;
 }
 
+/** @format */
 /** @format */
 /* main theme colors */
 :root[data-theme=light] {
@@ -1067,6 +1088,13 @@ u {
   color: var(--calendar);
 }
 
+.section-head {
+  color: transparent;
+  background-image: url("../images/Untitled.jpg");
+  background-clip: text;
+}
+
+/** @format */
 /** @format */
 .dark {
   background-color: #521B29;
@@ -1098,6 +1126,7 @@ u {
   -webkit-mask-image: -webkit-gradient(linear, left bottom, right bottom, color-stop(0%, rgb(0, 0, 0)), color-stop(45%, rgb(0, 0, 0)), color-stop(50%, rgba(0, 0, 0, 0.2)), color-stop(100%, rgba(0, 0, 0, 0.2)));
 }
 
+/** @format */
 /** @format */
 /** All prime container properties */
 #prime-container,
@@ -1181,8 +1210,9 @@ footer #box6 {
 }
 
 /** @format */
+/** @format */
 #center-page {
-  grid-column: 2/6;
+  grid-column: 1/7;
   border: 1px solid var(--granite-green);
   padding: 0;
   margin: 0;
@@ -1213,6 +1243,7 @@ footer #box6 {
   grid-template-columns: repeat(6, 1fr);
 }
 
+/** @format */
 /** @format */
 #page4-container {
   max-width: 90%;
@@ -1278,6 +1309,7 @@ header.heads {
 }
 
 /** @format */
+/** @format */
 #article-containers {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
@@ -1285,7 +1317,7 @@ header.heads {
 }
 
 .parcel, .parcels {
-  border: 1px solid hsl(22deg, 95%, 42%);
+  border: 1px solid hsl(22, 95%, 42%);
 }
 
 .music {
@@ -1311,6 +1343,7 @@ header.heads {
   background: var(--page-authors);
 }
 
+/** @format */
 /* Calendar if needed */
 .calendar {
   background: #CFC79E;
@@ -1360,6 +1393,4 @@ th {
 .thheader {
   color: #050533;
 }
-
-/** @format */
 /*# sourceMappingURL=main.css.map */
