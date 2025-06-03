@@ -5,6 +5,7 @@ const item1 = document.querySelector('.item-1');
 const item2 = document.querySelector('.item-2');
 const item3 = document.querySelector('.item-3');
 const item4 = document.querySelector('.item-4');
+const item5 = document.querySelector('.item-5');
 const datey = document.getElementById('datey');
 const copyr = document.querySelector('.copy');
 // site links
@@ -20,12 +21,15 @@ item3.innerHTML = item33;
 const str4 = 'Budget';
 const item44 = str4.link('http://elements/pages/page4');
 item4.innerHTML = item44;
+const str5 = 'CSS';
+const item55 = str5.link('http://elements/pages/css');
+item5.innerHTML = item55;
 
 for (let i = 0; i < document.links.length; i++) {
-  // this highlights the current active link
-  if (document.links[i].href === document.URL) {
-    document.links[i].className = 'current';
-  }
+	// this highlights the current active link
+	if (document.links[i].href === document.URL) {
+		document.links[i].className = 'current';
+	}
 }
 
 // function returnDate() {
@@ -40,8 +44,8 @@ for (let i = 0; i < document.links.length; i++) {
 
 const today = new Date();
 const f = new Intl.DateTimeFormat('en-us', {
-  dateStyle: 'full',
-  //timeStyle: 'full',
+	dateStyle: 'full',
+	//timeStyle: 'full',
 });
 // datey.style.color = '#4b0082';
 datey.innerHTML = f.format(today);
@@ -54,21 +58,21 @@ copyr.innerHTML = `Elements \u00A92019 - ${yer.getFullYear()}`; // copywright
 //--------------------------------------------------------------------------
 let indicator = document.querySelector('.indicator');
 const switchTheme = () => {
-  //body tag
-  const rootElem = document.documentElement;
-  // data- of the body tag
-  let dataTheme = rootElem.getAttribute('data-theme'),
-    newTheme;
-  // if the data- is light, change to dark
-  newTheme = dataTheme === 'light' ? 'dark' : 'light';
-  //change the data- to one color or the other
-  rootElem.setAttribute('data-theme', newTheme);
-  // set the body tag attr in localstorage
-  localStorage.setItem('theme', newTheme);
+	//body tag
+	const rootElem = document.documentElement;
+	// data- of the body tag
+	let dataTheme = rootElem.getAttribute('data-theme'),
+		newTheme;
+	// if the data- is light, change to dark
+	newTheme = dataTheme === 'light' ? 'dark' : 'light';
+	//change the data- to one color or the other
+	rootElem.setAttribute('data-theme', newTheme);
+	// set the body tag attr in localstorage
+	localStorage.setItem('theme', newTheme);
 };
 
 if (document.querySelector('#toggle')) {
-  document.querySelector('#toggle').addEventListener('click', switchTheme);
+	document.querySelector('#toggle').addEventListener('click', switchTheme);
 }
 // const todos = async () => {
 //   const response = await fetch('http://localhost/elements/assets/js/data.json');

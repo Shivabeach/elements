@@ -30,6 +30,12 @@ class Pages extends CI_Controller {
 		$data["header"] = "Expenses";
 		$this->load->view("pages/prime4", $data);
 	}
+	public function css()
+	{
+		$data["title"] = "CSS Elements";
+		$data["header"] = "CSS Elements";
+		$this->load->view("pages/css", $data);
+	}
 
 }
 

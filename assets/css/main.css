@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /** @format */
 /** @format */
 /** @format 
@@ -885,6 +886,12 @@ th {
   text-align: center;
 }
 
+.marker::before {
+  content: "➤ ";
+  color: #3209d0;
+  padding-right: 0.5rem;
+}
+
 /** @format */
 /** @format */
 .shadow {
@@ -894,7 +901,7 @@ th {
 }
 
 .trial:before {
-  content: ui4bv6o;
+  content: udw3iz0;
 }
 
 /** @format */
@@ -1131,7 +1138,8 @@ u {
 /** All prime container properties */
 #prime-container,
 #page2-container,
-#prime3-container {
+#prime3-container,
+#css-container {
   max-width: 100rem;
   margin-inline: auto;
   display: grid;
