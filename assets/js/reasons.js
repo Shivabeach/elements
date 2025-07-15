@@ -16,7 +16,7 @@ export const reason = [
 		date: 'Jan 16, 2023',
 	},
 	{
-		reason: 'Cable',
+		reason: 'Cable and Internet',
 		cost: 225,
 		date: 'Jan 20, 2023',
 	},
@@ -27,7 +27,7 @@ export const reason = [
 	},
 	{
 		reason: 'Disney',
-		cost: 16.41,
+		cost: 24.99,
 		date: 'Jan 24, 2022',
 	},
 	{

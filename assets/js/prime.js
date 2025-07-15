@@ -18,7 +18,7 @@ function display(story) {
 		</article>
 	`;
 }
- 
+
 function titlesList(titles) {
 	return `
 		<ul id="title-list">
@@ -37,7 +37,7 @@ articleContainer.innerHTML = `
 titleList.innerHTML = `
 	${stories.map(titlesList).join('')}`;
 
-lengths.innerHTML = `You have <u class="fs-4">${stories.length}</u> articles`;
+lengths.innerHTML = `You have <u class="fs-5">${stories.length}</u> articles`;
 
 //https://teamtreehouse.com/library/javascript-search/javascript-search
 const article = document.querySelectorAll('.article');
@@ -56,7 +56,9 @@ titleSearch.addEventListener('keyup', (e) => {
 
 const body = document.querySelector('body');
 const toggle = document.getElementById('toggle');
-toggle.addEventListener('click', () => {
-	toggle.classList.toggle('active');
-	body.classList.toggle('active');
-});
+if (toggle) {
+	toggle.addEventListener('click', () => {
+		toggle.classList.toggle('active');
+		body.classList.toggle('active');
+	});
+}

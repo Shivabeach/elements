@@ -37,16 +37,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<div class="card card1">
 						<h5>Calc %</h5>
 						<form>
-							<input type="text" class="no1 input-med-lg" placeholder="% of" > <br>
-							<input type="text" class="no2 input-med-lg" placeholder="Big Number" ><br>
+							<input type="text" class="no1 input-med" placeholder="% of" > <br>
+							<input type="text" class="no2 input-med" placeholder="Big Number" ><br>
 							<button type="submit" class="click">Calc</button>
 							<button type="reset">Clear</button>
 						</form>
 						<div class="calculated"></div>
 					</div>
 					<div class="card card2">
-						<p>Miles to Kilos : <input type="text" id="milesToKilo" class="input-med-lg"></p>
-						<p>Kilos to Miles : <input type="text" id="kiloToMiles" class="input-med-lg"></p>
+						<p>Miles to Kilometers : <input type="text" id="milesToKilo" class="input-med"></p>
+						<p>Kilometers to Miles : <input type="text" id="kiloToMiles" class="input-med"></p>
 						<p id="convertedMiles"></p>
 						<p id="showMiles"></p>
 					</div>
@@ -60,20 +60,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</div>
 				<div class="card card2">
 					<label>Meters 2 Feet</label>
-					<input class="input-med-lg trans" id="inputMeters" type="number" placeholder="Meters">
+					<input class="input-med trans" id="inputMeters" type="number" placeholder="Meters">
 				</p>
 				<p>Response: <span class="form-Output" id="formOutput"></span></p>
 				<p>Miles <span class="miles1" id="miles2"></span></p>
 			</div>
 			<div class="card card1">
 				<label>Celsius</label>
-				<input id="inputCelsius" class="input-med-lg" type="number" placeholder="Celsius">
+				<input id="inputCelsius" class="input-med" type="number" placeholder="Celsius">
 			</p>
 			<p>Fahrenheit: <span class="form-Output" id="outputFahrenheit"></span></p>
 		</div>
 		<div class="card card2">
 			<label for="ml">Ml To Oz</label>
-			<input type="number" id="ml" class="input-med-lg"/>
+			<input type="number" id="ml" class="input-med"/> 30ml = 1 ounce
 			<p class="showOz"> </p>
 			<p class="pints"></p>
 		</div>
@@ -86,8 +86,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 		<div class="card card2">
 			<h6>Tennessee tax = .07</h6>
-			<input type="number" class="tnTax input-med-lg" placeholder="Preferred Tax">
-			<input type="number" class="input-med-lg" id="taxed" placeholder="Purchase amount">
+			<input type="number" class="tnTax input-med" placeholder="Preferred Tax">
+			<input type="number" class="input-med" id="taxed" placeholder="Purchase amount">
 			<p>Tax: <span id="partialTotal"></span>  </p>
 			<p>Amount with tax: <span id="fullPrice"></span>    </p>
 		</div>
@@ -95,7 +95,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 		<div class="card card1">
 			<label for="cm">Centimeters to Inches</label>
-			<input type="text" id="cm" class="input-med-lg"/>
+			<input type="text" id="cm" class="input-med"/>
 			<p id="showCm"> </p>
 			<p class="mm"></p>
 		</div>

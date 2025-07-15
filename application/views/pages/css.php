@@ -84,7 +84,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           <li><code>a:link</code></li>
           <li><code>input:text, input:t </code></li>
           <li><code>link:css</code></li>
-          <li>Li plus another element<code>li*5>code</code></li>
+          <li>Li plus another element: <code>li*5>code</code></li>
           <li>Siblings - <code>div+p+bq</code></li>
           <li><code>Input Button: input:b</code></li>
           <li><code>Input Submit: input:s</code></li>
