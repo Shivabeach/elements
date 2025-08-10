@@ -44,7 +44,7 @@ function meterConverter() {
 function temperatureConverter() {
 	let convert = inputCelsius.value * 1.8 + 32;
 	convert = convert.toFixed(2);
-	document.getElementById('outputFahrenheit').innerHTML = `${convert} Degrees`;
+	document.getElementById('outputFahrenheit').innerHTML = `${convert} °Degrees`;
 }
 
 function mlToOz() {
