@@ -36,7 +36,12 @@ class Pages extends CI_Controller {
 		$data["header"] = "CSS Elements";
 		$this->load->view("pages/css", $data);
 	}
-
+	public function javascript()
+	{
+		$data["title"] = "Javascript Elements";
+		$data["header"] = "Javascript Elements";
+		$this->load->view("pages/javascript", $data);
+	}
 }
 
 /* End of file Pages.php */

@@ -6,6 +6,7 @@ const item2 = document.querySelector('.item-2');
 const item3 = document.querySelector('.item-3');
 const item4 = document.querySelector('.item-4');
 const item5 = document.querySelector('.item-5');
+const item6 = document.querySelector('.item-6');
 const datey = document.getElementById('datey');
 const copyr = document.querySelector('.copy');
 // site links
@@ -24,6 +25,9 @@ item4.innerHTML = item44;
 const str5 = 'CSS';
 const item55 = str5.link('http://elements/pages/css');
 item5.innerHTML = item55;
+const str6 = 'JavaScript';
+const item66 = str6.link('http://elements/pages/javascript');
+item6.innerHTML = item66;
 
 for (let i = 0; i < document.links.length; i++) {
 	// this highlights the current active link

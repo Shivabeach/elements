@@ -32,7 +32,7 @@ export const reason = [
 	},
 	{
 		reason: 'Paramount',
-		cost: 10.94,
+		cost: 14.22,
 		date: 'Jan 25, 2022',
 	},
 	{
