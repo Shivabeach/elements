@@ -8,7 +8,7 @@ import {
 	addToArray,
 	sanitizeInput,
 } from './utils.js';
-import * as mods from './page2Utils.js';
+import * as mods from './page2Utils.mjs';
 
 function calculate() {
 	const one = mods.number1.value;

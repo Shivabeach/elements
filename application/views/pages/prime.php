@@ -70,8 +70,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</div>
 				<div class="box" id="box5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, ex.</div>
 				<div class="box" id="box6">
-					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, iusto dignissimos optio deleniti laboriosam aperiam, id voluptatum sunt veniam necessitatibus.</p>
+					<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : '' ?></p>
 				</div>
+
 			</footer>
 		</div>
 		<script type="module" src="<?php echo base_url('assets/js/script.js');?>"></script>
