@@ -10,9 +10,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title><?php echo $title;?></title>
   <script>
-  let localS = localStorage.getItem("theme"),
-    themeToSet = localS
-  document.documentElement.setAttribute("data-theme", themeToSet)
+    let localS = localStorage.getItem("theme"),
+      themeToSet = localS
+    document.documentElement.setAttribute("data-theme", themeToSet)
   </script>
   <link rel="stylesheet" href="<?php echo base_url('assets/css/main.min.css');?>">
   <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
