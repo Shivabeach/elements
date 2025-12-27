@@ -413,6 +413,26 @@ select:focus {
 
 /** @format */
 /** @format */
+figure {
+  margin: 0;
+}
+
+img,
+picture {
+  margin: 0;
+  max-width: 100%;
+}
+
+.cap {
+  counter-increment: caption;
+}
+.cap::after {
+  content: " Example " counter(caption);
+  font-weight: bold;
+}
+
+/** @format */
+/** @format */
 html {
   color: #0f060d;
   font-family: arial;
@@ -459,6 +479,10 @@ p {
     scrollbar-width: auto;
   }
 }
+body#css {
+  counter-reset: caption;
+}
+
 /** @format */
 /* Elements */
 p {
@@ -781,6 +805,12 @@ th {
   display: inline;
 }
 
+.multi {
+  column-count: 2;
+  column-gap: 1rem;
+  column-width: 12rem;
+}
+
 /** @format */
 /*Common*/
 .underline {
@@ -903,7 +933,7 @@ th {
 }
 
 .trial:before {
-  content: uw94q27;
+  content: u2p3ip0;
 }
 
 /** @format */
@@ -1224,7 +1254,7 @@ footer #box6 {
   grid-column: 6/7;
 }
 
-.box {
+.box-u2p3ipm {
   padding: 0.5rem;
 }
 

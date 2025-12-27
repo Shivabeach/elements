@@ -8,6 +8,7 @@ class Pages extends CI_Controller {
 	{
 		$data["title"] = "First Prime";
 		$data["header"] = "Semetic Prime";
+		$this->load->view("header/header", $data);
 		$this->load->view("pages/prime", $data);
 	}
 
@@ -15,6 +16,7 @@ class Pages extends CI_Controller {
 	{
 		$data["title"] = "Second Prime";
 		$data["header"] = "Conversions";
+		$this->load->view("header/header", $data);
 		$this->load->view("pages/prime2", $data);
 	}
 
@@ -22,24 +24,28 @@ class Pages extends CI_Controller {
 	{
 		$data["title"] = "Music Prime";
 		$data["header"] = "Music";
+		$this->load->view("header/header", $data);
 		$this->load->view("pages/prime3", $data);
 	}
 	public function page4()
 	{
 		$data["title"] = "Expenses";
 		$data["header"] = "Expenses";
+		$this->load->view("header/header", $data);
 		$this->load->view("pages/prime4", $data);
 	}
 	public function css()
 	{
 		$data["title"] = "CSS Elements";
 		$data["header"] = "CSS Elements";
+		$this->load->view("header/header", $data);
 		$this->load->view("pages/css", $data);
 	}
 	public function javascript()
 	{
 		$data["title"] = "Javascript Elements";
 		$data["header"] = "Javascript Elements";
+		$this->load->view("header/header", $data);
 		$this->load->view("pages/javascript", $data);
 	}
 }

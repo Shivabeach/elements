@@ -1,6 +1,5 @@
 /** @format */
-
-@use 'variables' as *;
+@use '../abstracts' as *;
 html {
   //background-color: $viewport-background-color;
   box-sizing: border-box;

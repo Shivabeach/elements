@@ -1,24 +1,4 @@
-<?php
-defined('BASEPATH') OR exit('No direct script access allowed');
-?>
-<!DOCTYPE html>
-<html lang="en" data-theme="light">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title><?php echo $title;?></title>
-    <script>
-    let localS = localStorage.getItem("theme"),
-    themeToSet = localS
-    document.documentElement.setAttribute("data-theme", themeToSet)
-    </script>
-    <link rel="stylesheet" href="<?php echo base_url('assets/css/main.min.css');?>">
-    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
-    <script>
-    let FF_FOUC_FIX;
-    </script>
-  </head>
+
   <body id="java">
     <div id="css-container">
       <header class="head">
@@ -39,6 +19,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <li>document.getElementsByTagName('p');</li>
             <li>document.querySelectorAll("p.intro");</li>
             <li>document.querySelector("p.intro");</li>
+            <li>Year - getFullYear()</li>
+            <li>Month - getMonth()</li>
+            <li>Hours -	getHours()</li>
+            <li>Day (of week) -	getDay()</li>
           </ul>
 
           </div>
@@ -88,7 +72,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <header class="section-head"><h3>Mouse Events</h3></header>
         <div class="card card1">
           Events
-          <ul>
+          <ul class="multi"> 
             <li>mousedown </li>
             <li>mouseenter</li>
             <li>mouseleave</li>

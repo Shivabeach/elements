@@ -10,3 +10,12 @@ picture {
   margin: 0;
   max-width: 100%;
 }
+
+.cap 
+{
+  counter-increment: caption;
+  &::after {
+    content:  " Example " counter(caption);
+    font-weight: bold;
+  }
+}

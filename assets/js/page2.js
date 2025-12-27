@@ -27,7 +27,7 @@ function convertKToM() {
 	mods.showMiles.innerHTML = `${converting} Miles`;
 }
 function gramsConverter() {
-	const gram = mods.inputgrams.value;
+	let gram = mods.inputgrams.value;
 	document.getElementById('ounceOutput').innerHTML =
 		(Math.ceil(gram) * mods.GR_TO_OZ).toFixed(2) + ' Ounces';
 	document.getElementById('lbOutput').innerHTML =
@@ -171,3 +171,9 @@ mods.a2.addEventListener('keyup', addition);
 mods.a4.addEventListener('keyup', subtraction);
 mods.a6.addEventListener('keyup', multiplied);
 mods.a8.addEventListener('keyup', divided);
+
+mods.metersClose.addEventListener('click', () => {
+	mods.inputMeters.value = '';
+	document.getElementById('formOutput').innerHTML = '';
+	document.getElementById('miles2').innerText = '';
+});

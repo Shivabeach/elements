@@ -1,27 +1,4 @@
-<?php
-defined('BASEPATH') OR exit('No direct script access allowed');
-?>
-<!DOCTYPE html>
-<html lang="en" data-theme="light">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title><?php echo $title;?></title>
-  <script>
-    let localS = localStorage.getItem("theme"),
-      themeToSet = localS
-    document.documentElement.setAttribute("data-theme", themeToSet)
-  </script>
-  <link rel="stylesheet" href="<?php echo base_url('assets/css/main.min.css');?>">
-  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
-  <script>
-  let FF_FOUC_FIX;
-  </script>
-</head>
-
-<body id="css">
+<address id="css">
   <div id="css-container">
     <header class="head">
       <span class="title"><?php echo $header;?></span>
@@ -31,10 +8,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <!-- Start column 1 Add in boxes or cards  -->
       <article class="one">
         <header class="section-head one-head">
-          <h3>CSS & Examples</h3>
+          <h3>CSS & HTML Examples</h3>
         </header>
         <div class="card card1">
-          <h5>CSS Combinators</h5>
+          <h5 class="cap">CSS Combinators</h5>
 					<ul>
 						<li class="marker"> The adjacent sibling combinator (+) separates two selectors and matches the second element only if it immediately follows the first element, and both are children of the same parent element.</li>
 						<li class="marker">The CSS attribute selector matches elements based on the presence or value of a given attribute.a[title]</li>
@@ -46,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					</ul>
         </div>
         <div class="card card2">
-          <h5>CSS Examples</h5>
+          <h5 class="cap">CSS Examples</h5>
           <ul>
 						<li class="marker">div + p {<br>
   							background-color: gold;}</li>
@@ -54,17 +31,32 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<li class="marker">div > p {<br>
   						background-color: gold;}</li>
 						<li class="marker">p ~ ul {<br>
-  							background-color: gold;}</li>						
+  							background-color: gold;}</li>
+            <li class="marker">body: counter-reset: section <br>
+                Where the counter would be shown: counter-increment: section<br>
+                content: "Read Post # " counter(section)
 					</ul>          
         </div>
         <div class="card card2">
+          <h5 class="cap">Miscellaneous</h5>
             <ul>
               <li class="marker">! = Html</li>
               <li class="marker">link:css = <code>link rel="stylesheet" href="style.css" </code></li>
               <li class="marker">img = <code>img src="" alt="" </code> </li>
               <li class="marker">figc = figcaption figcaption</li>
-              <li class="marker"></li>
+              <li class="marker">Column-count: That’s how many times a JavaScript needs to split content into left floating elements.</li>
+              <li class="marker">Column-width: That’s the width of each newly created element.</li>
+              <li class="marker">Column-gap: That’s a left (or right) padding for these elements.</li>
+              <li class="marker">Column-rule: That’s a left (or right) border.</li>
             </ul>
+        </div>
+        <div class="card card2">
+          <h5 class="cap">Display Grid</h5>
+          <ul>
+            <li class="marker">grid-template-columns: (repeat 3,1fr)</li>
+            <li class="marker">grid-template-columns: repeat(auto-fit, minmax(min(var(--min-col-size), 100%), 1fr))Create --min-col-size under display grid</li>
+
+          </ul>
         </div>
       </article>
       <article class="two">
@@ -73,7 +65,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					
         </header>
         <div class="card card1">
-          <h5>Zen Coding Example</h5>
+          <h5 class="cap">Zen Coding Example</h5>
           <p>Zen Coding </p>
 					<li><code>li.example*4</code></li>
 					<li><code>a.link*2</code></li>
@@ -92,7 +84,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           <li><code>Table,TR,TD with class: table>.row>.col</code></li>
           <ul>
             <li>CSS
-              <ul>
+              <ul class="multi">
                 <li><code>Display: d</code></li>
                 <li><code>Visibility: v</code></li>
                 <li><code>Margin: m</code></li>

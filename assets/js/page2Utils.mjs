@@ -51,3 +51,4 @@ export const KNOT_TO_MPH = 1.150779;
 export const LITER_TO_GAL = 0.2641729;
 export const showMiles = document.getElementById('showMiles');
 export const convertedMiles = document.getElementById('convertedMiles');
+export const metersClose = document.querySelector('.meters-close');

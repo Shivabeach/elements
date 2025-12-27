@@ -3,6 +3,10 @@
 
 @use '../abstracts' as *;
 // prime page grid layout
+@use "sass:string";
+$sectionID: unique-id();
+
+
 #prime-container,
 #page2-container,
 #prime3-container,
@@ -87,7 +91,8 @@ footer {
     grid-column: 6/7;
   }
 }
-.box {
+.box-#{$sectionID} {
   padding: 0.5rem;
   //@include borders(1px, solid, var(--prime-text));
 }
+
