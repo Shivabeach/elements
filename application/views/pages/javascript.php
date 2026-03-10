@@ -62,6 +62,7 @@
                 datey.innerHTML = f.format(today);</code>
               </blockquote>
             </li>
+            <li>when using a script to fill in an input such as the date, always use .value, not textContent</li>
             </ul>
 
           </ul>

@@ -19,6 +19,7 @@
 	--page-date: #521b29;
 	--page-authors: #e0e0e0;
 	--calendar: hsl(336, 86%, 24%);
+	--blockquote-bg: #eeeeee;
 }
 
 :root[data-theme='dark'] {
@@ -38,6 +39,7 @@
 	--page-u: #4fc3f7;
 	--page-date: #080b4a;
 	--calendar: #d3927d;
+	--blockquote-bg: hsl(14, 63%, 27%);
 }
 
 body {
@@ -191,6 +193,11 @@ u {
 
 .section-head {
 	color: transparent;
-	background-image: url("../images/Untitled.jpg");
+	background-image: url('../images/Untitled.jpg');
 	background-clip: text;
+}
+blockquote {
+	background-color: var(--blockquote-bg);
+	margin: 1rem 0;
+	padding: 1rem;
 }

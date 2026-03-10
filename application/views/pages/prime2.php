@@ -4,11 +4,6 @@
 			<span class="title"><?php echo $header; ?></span>
 			<?php $this->load->view("menu/menu"); ?>
 		</header>
-		<!--
-			<aside id="left">
-				<p>Lorem ipsum dolor sit amet consectetur</p>
-			</aside>
--->
 		<section id="center-page">
 			<!-- Start column 1 Add in boxes or cards  -->
 			<article class="one">

@@ -54,8 +54,8 @@
           <h5 class="cap">Display Grid</h5>
           <ul>
             <li class="marker">grid-template-columns: (repeat 3,1fr)</li>
-            <li class="marker">grid-template-columns: repeat(auto-fit, minmax(min(var(--min-col-size), 100%), 1fr))Create --min-col-size under display grid</li>
-
+            <li class="marker">grid-template-columns: <code>repeat(auto-fit, minmax(min(var(--min-col-size), 100%), 1fr))Create --min-col-size under display grid</code></li>
+            <li class="marker">Named areas correlate to the scss layout, do not have their own  1 / 3 statement
           </ul>
         </div>
       </article>
@@ -136,6 +136,7 @@
         <div class="box" id="box6">box6</div>
       </footer>
   </div>
+
   <script type="module" src="<?php echo base_url('assets/js/script-dist.js');?>"></script>
 </body>
 
