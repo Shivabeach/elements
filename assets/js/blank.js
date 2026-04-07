@@ -11,7 +11,7 @@ const random = (max = 100) => {
 const theArray = [
 	{
 		title: 'The Array',
-		subject: 'Microobiology',
+		subject: 'Microbiology',
 		id: random(),
 	},
 	{

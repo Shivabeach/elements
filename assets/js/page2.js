@@ -17,12 +17,14 @@ function calculate() {
 	mods.calculated.innerText = done.toFixed(2) + '%';
 }
 function convertsMToK() {
-	let converting = mods.milesToKilo.value * mods.K_TO_MILES;
+	let m = sanitizeInput(mods.milesToKilo.value);
+	let converting = m * mods.K_TO_MILES;
 	converting = converting.toFixed(2);
 	mods.convertedMiles.innerHTML = `${converting} Kilometers`;
 }
 function convertKToM() {
-	let converting = mods.kiloToMiles.value * mods.M_TO_KILO;
+	let m = sanitizeInput(mods.kiloToMiles.value);
+	let converting = m * mods.M_TO_KILO;
 	converting = converting.toFixed(2);
 	mods.showMiles.innerHTML = `${converting} Miles`;
 }
