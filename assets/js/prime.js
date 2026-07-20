@@ -40,7 +40,9 @@ titleList.innerHTML = `
 lengths.innerHTML = `You have <u class="fs-5">${stories.length}</u> articles`;
 
 //https://teamtreehouse.com/library/javascript-search/javascript-search
+//article container
 const article = document.querySelectorAll('.article');
+//search input box
 const titleSearch = select('#titleSearch');
 titleSearch.addEventListener('keyup', (e) => {
 	let currentValue = e.target.value.toLowerCase();

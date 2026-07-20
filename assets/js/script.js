@@ -29,12 +29,28 @@ const copyr = document.querySelector('.copy');
 // const item66 = str6.link('http://elements/pages/javascript');
 // item6.innerHTML = item66;
 
-for (let i = 0; i < document.links.length; i++) {
-	// this highlights the current active link
-	if (document.links[i].href === document.URL) {
-		document.links[i].className = 'current';
-	}
-}
+//for (let i = 0; i < document.links.length; i++) {
+//	// this highlights the current active link
+//	if (document.links[i].href === document.URL) {
+//		document.links[i].className = 'current';
+//	}
+//}
+// Highlight the current active link using URL normalization
+const normalizeHref = (href) => {
+  try {
+    const u = new URL(href, location.href);
+    u.hash = '';
+    return u.href.replace(/\/$/, '');
+  } catch (err) {
+    return href.replace(/#.*$/, '').replace(/\/$/, '');
+  }
+};
+const currentHref = normalizeHref(window.location.href);
+Array.from(document.links).forEach((link) => {
+  if (normalizeHref(link.href) === currentHref) {
+    link.classList.add('current');
+  }
+});
 
 // function returnDate() {
 //   const date = new Date();
@@ -48,8 +64,8 @@ for (let i = 0; i < document.links.length; i++) {
 
 const today = new Date();
 const f = new Intl.DateTimeFormat('en-us', {
-	dateStyle: 'full',
-	//timeStyle: 'full',
+  dateStyle: 'full',
+  //timeStyle: 'full',
 });
 // datey.style.color = '#4b0082';
 datey.innerHTML = f.format(today);
@@ -62,21 +78,21 @@ copyr.innerHTML = `Elements \u00A92019 - ${yer.getFullYear()}`; // copywright
 //--------------------------------------------------------------------------
 let indicator = document.querySelector('.indicator');
 const switchTheme = () => {
-	//body tag
-	const rootElem = document.documentElement;
-	// data- of the body tag
-	let dataTheme = rootElem.getAttribute('data-theme'),
-		newTheme;
-	// if the data- is light, change to dark
-	newTheme = dataTheme === 'light' ? 'dark' : 'light';
-	//change the data- to one color or the other
-	rootElem.setAttribute('data-theme', newTheme);
-	// set the body tag attr in localstorage
-	localStorage.setItem('theme', newTheme);
+  //body tag
+  const rootElem = document.documentElement;
+  // data- of the body tag
+  let dataTheme = rootElem.getAttribute('data-theme'),
+    newTheme;
+  // if the data- is light, change to dark
+  newTheme = dataTheme === 'light' ? 'dark' : 'light';
+  //change the data- to one color or the other
+  rootElem.setAttribute('data-theme', newTheme);
+  // set the body tag attr in localstorage
+  localStorage.setItem('theme', newTheme);
 };
 
 if (document.querySelector('#toggle')) {
-	document.querySelector('#toggle').addEventListener('click', switchTheme);
+  document.querySelector('#toggle').addEventListener('click', switchTheme);
 }
 // const todos = async () => {
 //   const response = await fetch('http://localhost/elements/assets/js/data.json');

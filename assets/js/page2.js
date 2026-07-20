@@ -1,13 +1,6 @@
 /** @format */
 'use strict';
-import {
-	properCase,
-	log,
-	listen,
-	months,
-	addToArray,
-	sanitizeInput,
-} from './utils.js';
+import { properCase, log, listen, months, addToArray, sanitizeInput } from './utils.js';
 import * as mods from './page2Utils.mjs';
 
 function calculate() {
@@ -30,16 +23,13 @@ function convertKToM() {
 }
 function gramsConverter() {
 	let gram = mods.inputgrams.value;
-	document.getElementById('ounceOutput').innerHTML =
-		(Math.ceil(gram) * mods.GR_TO_OZ).toFixed(2) + ' Ounces';
-	document.getElementById('lbOutput').innerHTML =
-		((Math.ceil(gram) * mods.GR_TO_OZ) / 16).toFixed(2) + ' pounds';
-	document.querySelector('.kilograms').innerHTML =
-		(Math.ceil(gram) / 1000).toFixed(2) + ' Kilograms';
+	document.getElementById('ounceOutput').innerHTML = (Math.ceil(gram) * mods.GR_TO_OZ).toFixed(2) + ' Ounces';
+	document.getElementById('lbOutput').innerHTML = ((Math.ceil(gram) * mods.GR_TO_OZ) / 16).toFixed(2) + ' pounds';
+	document.querySelector('.kilograms').innerHTML = (Math.ceil(gram) / 1000).toFixed(2) + ' Kilograms';
 }
 function meterConverter() {
-	const feets = Math.floor(inputMeters.value * 3.2808) + ' Feet';
-	const miles = (inputMeters.value * 0.0006213712).toFixed(2) + ' Miles';
+	const feets = Math.floor(inputMeters.value * 3.28084) + ' Feet';
+	const miles = (inputMeters.value * 0.000621371).toFixed(2) + ' Miles';
 	document.getElementById('formOutput').innerHTML = feets;
 	document.getElementById('miles2').innerText = miles;
 }
@@ -58,8 +48,7 @@ function mlToOz() {
 }
 
 function ltToGal(lite) {
-	mods.showLit.innerHTML =
-		(liter.value * mods.LITER_TO_GAL).toFixed(2) + ' Gallons';
+	mods.showLit.innerHTML = (liter.value * mods.LITER_TO_GAL).toFixed(2) + ' Gallons';
 }
 
 function cmToIn() {
